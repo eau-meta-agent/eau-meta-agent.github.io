@@ -164,10 +164,11 @@ if (paperUrl) {
 }
 const codeUrl = publicationUrl(config.codeUrl);
 if (codeUrl) {
-  const link = document.querySelector('#code-link');
-  link.href = codeUrl;
-  link.target = '_blank';
-  link.rel = 'noopener';
-  link.hidden = false;
-  document.querySelector('#code-status').hidden = true;
+  document.querySelectorAll('[data-code-link]').forEach(link => {
+    link.href = codeUrl;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.hidden = false;
+  });
+  document.querySelectorAll('[data-code-status]').forEach(status => { status.hidden = true; });
 }
