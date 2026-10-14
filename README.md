@@ -37,7 +37,7 @@ window.EAU_CONFIG = {
 
 放入正式论文后，所有论文下载入口自动切换为 “Read the paper”。代码链接为空时显示 “Code · forthcoming”。这些示例地址没有被设置为当前链接。
 
-当前提供的 `iclr2026_conference.pdf` 实际内容是 **ICLR 2026 格式说明模板**，因此未将它作为论文发布。`assets/eau-paper-source.zip` 是从本次提供的 `main.tex`、`sections/`、`tables/`、`figs/` 和样式文件生成的源码快照；它不是正式 PDF，也不是训练代码。论文 source 变动后需同步更新此压缩包。
+论文链接指向 arXiv:2610.16523，首屏和 Resources 区的 arXiv 按钮直接写在 `index.html` 中。
 
 获得正式网站地址后，可将 `index.html` 的 `og:image` 改为分享图的完整 HTTPS 地址，并添加 `og:url`，便于社交平台抓取预览。
 
@@ -53,7 +53,6 @@ project-page/
 ├── assets/
 │   ├── favicon.svg
 │   ├── social-card.png    # 分享预览图
-│   ├── eau-paper-source.zip
 │   └── *.webp             # 由原论文 PDF 图转换
 └── README.md
 ```
