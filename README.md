@@ -39,7 +39,7 @@ window.EAU_CONFIG = {
 
 论文链接指向 arXiv:2610.16523，首屏和 Resources 区的 arXiv 按钮直接写在 `index.html` 中。
 
-获得正式网站地址后，可将 `index.html` 的 `og:image` 改为分享图的完整 HTTPS 地址，并添加 `og:url`，便于社交平台抓取预览。
+`og:url` 与 `og:image` 已使用正式地址 `https://eau-meta-agent.github.io/`。
 
 ## 文件
 
