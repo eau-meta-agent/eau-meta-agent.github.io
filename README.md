@@ -66,7 +66,7 @@ project-page/
 - τ²-bench 原始分数：`tables/tau2bench_comparison.tex`。
 - 图：`figs/eau_demo.pdf`、`figs/experience_analysis.pdf`、`figs/usergym_progression.pdf`，已转换为 WebP，点击可查看大图。
 - 相对提升由表格原始数值计算。图表均从零开始，在切换模型时保持相同尺度。
-- 引用暂按当前 source 的研究稿处理，年份设为 2026，未宣称会议录用或补造 DOI / arXiv。正式发布后请更新 `index.html` 中的 BibTeX。
+- 引用使用 arXiv:2610.16523。代码因审核中，页面显示 “Code · coming soon (under review)”；公开后在 `site-config.js` 填入 `codeUrl`。
 
 ### 原稿中需要作者确认的差异
 
