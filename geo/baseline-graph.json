@@ -1,0 +1,632 @@
+{
+  "nodes": [
+    {
+      "id": "file:index.html",
+      "kind": "file",
+      "path": "index.html",
+      "mutable": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "file:README.md",
+      "kind": "file",
+      "path": "README.md",
+      "mutable": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "file:robots.txt",
+      "kind": "file",
+      "path": "robots.txt",
+      "mutable": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "file:sitemap.xml",
+      "kind": "file",
+      "path": "sitemap.xml",
+      "mutable": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "file:styles.css",
+      "kind": "file",
+      "path": "styles.css",
+      "mutable": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "file:script.js",
+      "kind": "file",
+      "path": "script.js",
+      "mutable": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "file:site-config.js",
+      "kind": "file",
+      "path": "site-config.js",
+      "mutable": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "section:framework",
+      "kind": "html-section",
+      "path": "index.html",
+      "mutable": true,
+      "operations": [
+        "add_after",
+        "edit",
+        "move_after",
+        "remove"
+      ],
+      "span": [
+        12853,
+        16895
+      ]
+    },
+    {
+      "id": "section:overview",
+      "kind": "html-section",
+      "path": "index.html",
+      "mutable": true,
+      "operations": [
+        "add_after",
+        "edit",
+        "move_after",
+        "remove"
+      ],
+      "span": [
+        11138,
+        12847
+      ]
+    },
+    {
+      "id": "section:research-landscape",
+      "kind": "html-section",
+      "path": "index.html",
+      "mutable": true,
+      "operations": [
+        "add_after",
+        "edit",
+        "move_after",
+        "remove"
+      ],
+      "span": [
+        9206,
+        11132
+      ]
+    },
+    {
+      "id": "section:resources",
+      "kind": "html-section",
+      "path": "index.html",
+      "mutable": true,
+      "operations": [
+        "add_after",
+        "edit",
+        "move_after",
+        "remove"
+      ],
+      "span": [
+        21791,
+        23307
+      ]
+    },
+    {
+      "id": "section:results",
+      "kind": "html-section",
+      "path": "index.html",
+      "mutable": true,
+      "operations": [
+        "add_after",
+        "edit",
+        "move_after",
+        "remove"
+      ],
+      "span": [
+        16901,
+        19915
+      ]
+    },
+    {
+      "id": "section:summary",
+      "kind": "html-section",
+      "path": "index.html",
+      "mutable": true,
+      "operations": [
+        "add_after",
+        "edit",
+        "move_after",
+        "remove"
+      ],
+      "span": [
+        8257,
+        9200
+      ]
+    },
+    {
+      "id": "meta:title",
+      "kind": "html-metadata",
+      "path": "index.html",
+      "mutable": true,
+      "operations": [
+        "replace_text"
+      ],
+      "span": [
+        1210,
+        1298
+      ]
+    },
+    {
+      "id": "meta:description",
+      "kind": "html-metadata",
+      "path": "index.html",
+      "mutable": true,
+      "operations": [
+        "replace_text"
+      ],
+      "span": [
+        184,
+        443
+      ]
+    },
+    {
+      "id": "meta:canonical",
+      "kind": "html-metadata",
+      "path": "index.html",
+      "mutable": true,
+      "operations": [
+        "replace_text"
+      ],
+      "span": [
+        507,
+        570
+      ]
+    },
+    {
+      "id": "meta:schema",
+      "kind": "html-metadata",
+      "path": "index.html",
+      "mutable": true,
+      "operations": [
+        "replace_text"
+      ],
+      "span": [
+        1301,
+        2422
+      ]
+    },
+    {
+      "id": "file:assets/eau_demo.webp",
+      "kind": "asset",
+      "path": "assets/eau_demo.webp",
+      "mutable": true,
+      "operations": []
+    },
+    {
+      "id": "file:assets/experience_analysis.webp",
+      "kind": "asset",
+      "path": "assets/experience_analysis.webp",
+      "mutable": true,
+      "operations": []
+    },
+    {
+      "id": "file:assets/favicon.svg",
+      "kind": "asset",
+      "path": "assets/favicon.svg",
+      "mutable": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "file:assets/usergym_progression.webp",
+      "kind": "asset",
+      "path": "assets/usergym_progression.webp",
+      "mutable": true,
+      "operations": []
+    },
+    {
+      "id": "external:e8eea71086",
+      "kind": "external-source",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "url": "https://arxiv.org/abs/2512.19682"
+    },
+    {
+      "id": "external:c03d8d1bbe",
+      "kind": "external-source",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "url": "https://arxiv.org/abs/2605.24426"
+    },
+    {
+      "id": "external:cb9fc7c1c7",
+      "kind": "external-source",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "url": "https://arxiv.org/abs/2606.02372"
+    },
+    {
+      "id": "external:paper",
+      "kind": "external-source",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "url": "https://arxiv.org/abs/2610.16523"
+    },
+    {
+      "id": "external:d41310e492",
+      "kind": "external-source",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "url": "https://eau-meta-agent.github.io/"
+    },
+    {
+      "id": "external:repository-metadata",
+      "kind": "external-owned",
+      "path": null,
+      "mutable": false,
+      "operations": [
+        "manual-admin-edit"
+      ],
+      "url": "https://github.com/eau-meta-agent/eau-meta-agent.github.io"
+    },
+    {
+      "id": "external:paper-backlink",
+      "kind": "external-owned",
+      "path": null,
+      "mutable": false,
+      "operations": [
+        "author-edit"
+      ],
+      "url": "https://arxiv.org/abs/2610.16523",
+      "state": "unverified"
+    },
+    {
+      "id": "outcome:site-discovery",
+      "kind": "unobserved-outcome",
+      "path": null,
+      "mutable": false,
+      "operations": []
+    },
+    {
+      "id": "outcome:ChatGPT Search:retrieval",
+      "kind": "observed-outcome",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "platform": "ChatGPT Search"
+    },
+    {
+      "id": "outcome:ChatGPT Search:answer",
+      "kind": "observed-outcome",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "platform": "ChatGPT Search"
+    },
+    {
+      "id": "outcome:Doubao App:retrieval",
+      "kind": "observed-outcome",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "platform": "Doubao App"
+    },
+    {
+      "id": "outcome:Doubao App:answer",
+      "kind": "observed-outcome",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "platform": "Doubao App"
+    },
+    {
+      "id": "outcome:DeepSeek App:retrieval",
+      "kind": "observed-outcome",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "platform": "DeepSeek App"
+    },
+    {
+      "id": "outcome:DeepSeek App:answer",
+      "kind": "observed-outcome",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "platform": "DeepSeek App"
+    },
+    {
+      "id": "outcome:Claude Web Search:retrieval",
+      "kind": "observed-outcome",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "platform": "Claude Web Search"
+    },
+    {
+      "id": "outcome:Claude Web Search:answer",
+      "kind": "observed-outcome",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "platform": "Claude Web Search"
+    },
+    {
+      "id": "outcome:Grok:retrieval",
+      "kind": "observed-outcome",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "platform": "Grok"
+    },
+    {
+      "id": "outcome:Grok:answer",
+      "kind": "observed-outcome",
+      "path": null,
+      "mutable": false,
+      "operations": [],
+      "platform": "Grok"
+    }
+  ],
+  "edges": [
+    {
+      "from": "external:repository-metadata",
+      "to": "file:README.md",
+      "kind": "describes"
+    },
+    {
+      "from": "file:README.md",
+      "to": "file:index.html",
+      "kind": "links-to"
+    },
+    {
+      "from": "file:index.html",
+      "to": "external:c03d8d1bbe",
+      "kind": "links-to"
+    },
+    {
+      "from": "file:index.html",
+      "to": "external:cb9fc7c1c7",
+      "kind": "links-to"
+    },
+    {
+      "from": "file:index.html",
+      "to": "external:d41310e492",
+      "kind": "links-to"
+    },
+    {
+      "from": "file:index.html",
+      "to": "external:e8eea71086",
+      "kind": "links-to"
+    },
+    {
+      "from": "file:index.html",
+      "to": "external:paper",
+      "kind": "links-to"
+    },
+    {
+      "from": "file:index.html",
+      "to": "file:assets/eau_demo.webp",
+      "kind": "references"
+    },
+    {
+      "from": "file:index.html",
+      "to": "file:assets/experience_analysis.webp",
+      "kind": "references"
+    },
+    {
+      "from": "file:index.html",
+      "to": "file:assets/favicon.svg",
+      "kind": "references"
+    },
+    {
+      "from": "file:index.html",
+      "to": "file:assets/usergym_progression.webp",
+      "kind": "references"
+    },
+    {
+      "from": "file:index.html",
+      "to": "file:script.js",
+      "kind": "references"
+    },
+    {
+      "from": "file:index.html",
+      "to": "file:site-config.js",
+      "kind": "references"
+    },
+    {
+      "from": "file:index.html",
+      "to": "file:styles.css",
+      "kind": "references"
+    },
+    {
+      "from": "file:index.html",
+      "to": "meta:canonical",
+      "kind": "contains"
+    },
+    {
+      "from": "file:index.html",
+      "to": "meta:description",
+      "kind": "contains"
+    },
+    {
+      "from": "file:index.html",
+      "to": "meta:schema",
+      "kind": "contains"
+    },
+    {
+      "from": "file:index.html",
+      "to": "meta:title",
+      "kind": "contains"
+    },
+    {
+      "from": "file:index.html",
+      "to": "section:framework",
+      "kind": "contains"
+    },
+    {
+      "from": "file:index.html",
+      "to": "section:overview",
+      "kind": "contains"
+    },
+    {
+      "from": "file:index.html",
+      "to": "section:research-landscape",
+      "kind": "contains"
+    },
+    {
+      "from": "file:index.html",
+      "to": "section:resources",
+      "kind": "contains"
+    },
+    {
+      "from": "file:index.html",
+      "to": "section:results",
+      "kind": "contains"
+    },
+    {
+      "from": "file:index.html",
+      "to": "section:summary",
+      "kind": "contains"
+    },
+    {
+      "from": "file:robots.txt",
+      "to": "file:sitemap.xml",
+      "kind": "declares"
+    },
+    {
+      "from": "file:sitemap.xml",
+      "to": "file:index.html",
+      "kind": "lists"
+    },
+    {
+      "from": "outcome:ChatGPT Search:answer",
+      "to": "outcome:ChatGPT Search:retrieval",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:ChatGPT Search:retrieval",
+      "to": "external:paper",
+      "kind": "may-retrieve"
+    },
+    {
+      "from": "outcome:ChatGPT Search:retrieval",
+      "to": "outcome:site-discovery",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:Claude Web Search:answer",
+      "to": "outcome:Claude Web Search:retrieval",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:Claude Web Search:retrieval",
+      "to": "external:paper",
+      "kind": "may-retrieve"
+    },
+    {
+      "from": "outcome:Claude Web Search:retrieval",
+      "to": "outcome:site-discovery",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:DeepSeek App:answer",
+      "to": "outcome:DeepSeek App:retrieval",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:DeepSeek App:retrieval",
+      "to": "external:paper",
+      "kind": "may-retrieve"
+    },
+    {
+      "from": "outcome:DeepSeek App:retrieval",
+      "to": "outcome:site-discovery",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:Doubao App:answer",
+      "to": "outcome:Doubao App:retrieval",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:Doubao App:retrieval",
+      "to": "external:paper",
+      "kind": "may-retrieve"
+    },
+    {
+      "from": "outcome:Doubao App:retrieval",
+      "to": "outcome:site-discovery",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:Grok:answer",
+      "to": "outcome:Grok:retrieval",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:Grok:retrieval",
+      "to": "external:paper",
+      "kind": "may-retrieve"
+    },
+    {
+      "from": "outcome:Grok:retrieval",
+      "to": "outcome:site-discovery",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:site-discovery",
+      "to": "external:paper-backlink",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:site-discovery",
+      "to": "external:repository-metadata",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:site-discovery",
+      "to": "file:README.md",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:site-discovery",
+      "to": "file:index.html",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:site-discovery",
+      "to": "file:robots.txt",
+      "kind": "depends-on"
+    },
+    {
+      "from": "outcome:site-discovery",
+      "to": "file:sitemap.xml",
+      "kind": "depends-on"
+    }
+  ],
+  "site_url": "https://eau-meta-agent.github.io/",
+  "paper_url": "https://arxiv.org/abs/2610.16523"
+}
