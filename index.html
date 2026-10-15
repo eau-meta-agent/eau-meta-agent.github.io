@@ -116,7 +116,17 @@
 
     <section class="research-summary wrap" id="summary" aria-labelledby="summary-title">
       <div><p class="eyebrow section-number">Research summary</p><h2 id="summary-title">What is EAU?</h2></div>
-      <div><p>EAU is a meta-agent framework for training user-centric LLM agents through environment–agent–user co-evolution. It monitors training trajectories, tool traces, rewards, and statistics; proposes targeted changes to the simulated user, environment, reward design, and RL configuration; and applies validated changes during an ongoing run. Experience from those interventions also carries across runs.</p><p>The paper evaluates EAU on UserGym, ColBench, and τ²-bench with two policy backbones. The results section below shows the reported scores and comparison methods. <a href="https://arxiv.org/abs/2610.16523">Read the paper and abstract ↗</a></p></div>
+      <div><p>EAU is a meta-agent framework for training user-centric LLM agents through environment–agent–user co-evolution. It monitors training trajectories, tool traces, rewards, and statistics; proposes targeted changes to the simulated user, environment, reward design, and RL configuration; and applies validated changes during an ongoing run. Experience from those interventions also carries across runs.</p><p>The paper evaluates EAU on UserGym, ColBench, and τ²-bench with two policy backbones. The results section below shows the reported scores and comparison methods. <a href="#research-landscape">Compare recent related work ↗</a> <a href="https://arxiv.org/abs/2610.16523">Read the paper and abstract ↗</a></p></div>
+    </section>
+
+    <section class="research-summary wrap" id="research-landscape" aria-labelledby="landscape-title">
+      <div><p class="eyebrow section-number">Research context · 2025–2026</p><h2 id="landscape-title">Recent work on agent–environment co-evolution</h2></div>
+      <div>
+        <p>These papers make different parts of an agent’s training setting adaptive. EAU adds a simulated user to that loop: its meta-agent diagnoses trajectories and can revise user behavior, environment feedback, rewards, and training settings while the policy learns.</p>
+        <article><h3><a href="https://arxiv.org/abs/2605.24426">SEAL</a> · May 2026</h3><p>SEAL uses failures from tool-use trajectories to update both the agent policy and the training environment’s learning interface. Its environment-side changes expose clearer tool cues, constraints, and recovery feedback. EAU also adapts the training setting, with an additional focus on the simulated user and changes that persist across runs.</p></article>
+        <article><h3><a href="https://arxiv.org/abs/2606.02372">CoMAP</a> · June 2026</h3><p>CoMAP co-evolves an agent policy and a textual world model. The world model predicts future feedback for possible actions, and later trajectories improve that model through self-distillation. It focuses on the model of environment dynamics; EAU instead changes the interactive training system, including user simulation and reward design.</p></article>
+        <article><h3><a href="https://arxiv.org/abs/2512.19682">GenEnv</a> · December 2025</h3><p>GenEnv pairs an agent with a generative environment simulator that produces tasks near the agent’s current capability. This creates an adaptive curriculum instead of a fixed set of interactions. EAU’s scope is broader in a different direction: it can intervene in user behavior, environment behavior, rewards, and RL configuration during training.</p></article>
+      </div>
     </section>
 
     <section class="overview section-pad" id="overview" aria-labelledby="overview-title">
