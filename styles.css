@@ -9,3 +9,14 @@
 
 /* Readable row labels and comfortable primary navigation targets. */
 tbody th[scope=row]{font-size:12px;color:var(--ink);font-weight:400}tr.ours th[scope=row]{font-weight:600}nav a{min-height:44px;display:inline-flex;align-items:center}.model-switch button{min-height:44px}
+
+/* Keep the paper title visible and readable at every viewport width. */
+.hero-kicker{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--clay);font-weight:600;margin:0 0 18px}
+.hero h1{font-size:clamp(36px,3.55vw,54px);line-height:1.13;letter-spacing:-.045em}
+.hero-subtitle{font-style:italic;color:var(--clay);margin-top:24px}
+.research-summary{display:grid;grid-template-columns:1fr 1.03fr;gap:105px;padding-block:43px 52px;border-top:1px solid var(--line)}
+.research-summary .eyebrow{margin-bottom:14px}.research-summary h2{font-size:clamp(32px,3vw,43px)}
+.research-summary>div:last-child{font-size:14px;color:var(--muted);line-height:1.8}
+.research-summary>div:last-child p:last-child{margin-bottom:0}.research-summary a{color:var(--clay);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:800px){.hero h1{font-size:clamp(31px,3.65vw,43px)}.research-summary{gap:35px}}
+@media(max-width:580px){.hero h1{font-size:clamp(36px,9vw,47px)}.research-summary{grid-template-columns:1fr;gap:15px;padding-block:36px 42px}.research-summary>div:last-child{font-size:13px}}

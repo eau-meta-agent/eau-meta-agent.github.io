@@ -4,16 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f2eb">
-  <meta name="description" content="EAU: Environment–Agent–User Co-evolution for Training User-Centric Agents. A meta-agent framework that adapts the training system alongside the policy.">
-  <meta property="og:title" content="eau — Learning to evolve, together.">
-  <meta property="og:description" content="Environment–Agent–User Co-evolution for Training User-Centric Agents. Explore the framework, experiments, and research.">
-  <meta property="og:type" content="website">
+  <meta name="description" content="EAU: Environment–Agent–User Co-evolution for Training User-Centric Agents (arXiv:2610.16523). A meta-agent adapts user simulation, environment rewards, and RL settings during training. Read the method and benchmark results.">
+  <meta name="robots" content="index,follow,max-snippet:-1">
+  <link rel="canonical" href="https://eau-meta-agent.github.io/">
+  <meta property="og:title" content="EAU: Environment–Agent–User Co-evolution for Training User-Centric Agents">
+  <meta property="og:description" content="The EAU research project page: method, benchmark results, figures, authors, and paper for arXiv:2610.16523.">
+  <meta property="og:type" content="article">
   <meta property="og:url" content="https://eau-meta-agent.github.io/">
   <meta property="og:image" content="https://eau-meta-agent.github.io/assets/social-card.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <title>eau — Environment–Agent–User Co-evolution</title>
+  <title>EAU: Environment–Agent–User Co-evolution for Training User-Centric Agents</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "EAU: Environment-Agent-User Co-evolution for Training User-Centric Agents",
+    "name": "EAU: Environment-Agent-User Co-evolution for Training User-Centric Agents",
+    "description": "EAU is a meta-agent framework that adapts user simulation, environment and reward design, and reinforcement-learning configuration while an agent policy is being trained.",
+    "datePublished": "2026-10-12",
+    "inLanguage": "en",
+    "url": "https://eau-meta-agent.github.io/",
+    "sameAs": "https://arxiv.org/abs/2610.16523",
+    "identifier": "arXiv:2610.16523",
+    "author": [
+      {"@type": "Person", "name": "Min Cai"},
+      {"@type": "Person", "name": "Dan Zhang"},
+      {"@type": "Person", "name": "Gao Xing"},
+      {"@type": "Person", "name": "Libin Ma"},
+      {"@type": "Person", "name": "Zhaohui Xu"},
+      {"@type": "Person", "name": "Xi Ye"}
+    ],
+    "about": ["multi-turn reinforcement learning", "user simulator", "meta-agent", "environment-agent-user co-evolution"]
+  }
+  </script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="site-config.js" defer></script>
@@ -32,8 +57,9 @@
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <h1 id="hero-title">Learning to<br>evolve, <em>together.</em></h1>
-        <p class="hero-subtitle">Environment–Agent–User Co-evolution<br>for Training User-Centric Agents</p>
+        <p class="hero-kicker">Research paper · arXiv:2610.16523</p>
+        <h1 id="hero-title">EAU: <em>Environment–Agent–User</em> Co-evolution for Training User-Centric Agents</h1>
+        <p class="hero-subtitle">Learning to evolve, together.</p>
         <p class="hero-description">Better agents begin with better interactions. <strong>eau</strong> evolves the environment, the agent, and the simulated user together—while training is still happening.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="#overview">Explore the research <span aria-hidden="true">↗</span></a>
@@ -88,6 +114,11 @@
       <p class="equal-contribution">* Equal contribution</p>
     </section>
 
+    <section class="research-summary wrap" id="summary" aria-labelledby="summary-title">
+      <div><p class="eyebrow section-number">Research summary</p><h2 id="summary-title">What is EAU?</h2></div>
+      <div><p>EAU is a meta-agent framework for training user-centric LLM agents through environment–agent–user co-evolution. It monitors training trajectories, tool traces, rewards, and statistics; proposes targeted changes to the simulated user, environment, reward design, and RL configuration; and applies validated changes during an ongoing run. Experience from those interventions also carries across runs.</p><p>The paper evaluates EAU on UserGym, ColBench, and τ²-bench with two policy backbones. The results section below shows the reported scores and comparison methods. <a href="https://arxiv.org/abs/2610.16523">Read the paper and abstract ↗</a></p></div>
+    </section>
+
     <section class="overview section-pad" id="overview" aria-labelledby="overview-title">
       <div class="wrap overview-grid">
         <div><p class="eyebrow section-number">01 / The idea</p><h2 id="overview-title">What if the training<br>system could<br><em>learn, too?</em></h2></div>
@@ -140,7 +171,7 @@
         <div class="chart-grid" id="result-charts" aria-live="polite"></div>
         <noscript><p>Enable JavaScript to explore the model comparison. On Qwen3-4B, eau scores 0.623 on UserGym, 0.600 on ColBench task success, and 0.627 overall. The source tables are included in the downloadable manuscript.</p></noscript>
         <p class="results-note">Higher is better. Relative gains compare eau with InfoPO. Overall scores aggregate UserGym and ColBench under the paper’s evaluation protocol.</p>
-        <details class="result-table-details"><summary>Compare all reported methods <span aria-hidden="true">+</span></summary><div class="table-scroll"><table><caption id="table-caption">Qwen3-4B · UserGym and ColBench</caption><thead><tr><th scope="col">Method</th><th scope="col">UserGym avg.</th><th scope="col">ColBench pass</th><th scope="col">ColBench success</th><th scope="col">Overall</th></tr></thead><tbody id="results-table-body"></tbody></table></div></details>
+        <details class="result-table-details"><summary>Compare all reported methods <span aria-hidden="true">+</span></summary><div class="table-scroll"><table><caption id="table-caption">Qwen3-4B · UserGym and ColBench</caption><thead><tr><th scope="col">Method</th><th scope="col">UserGym avg.</th><th scope="col">ColBench pass</th><th scope="col">ColBench success</th><th scope="col">Overall</th></tr></thead><tbody id="results-table-body"><tr><th scope="row">Backbone</th><td>0.426</td><td>0.272</td><td>0.153</td><td>0.378</td></tr><tr><th scope="row">ReAct</th><td>0.457</td><td>0.269</td><td>0.145</td><td>0.401</td></tr><tr><th scope="row">Reflexion</th><td>0.455</td><td>0.303</td><td>0.184</td><td>0.408</td></tr><tr><th scope="row">RAGEN</th><td>0.468</td><td>0.479</td><td>0.361</td><td>0.457</td></tr><tr><th scope="row">Search-R1</th><td>0.472</td><td>0.467</td><td>0.355</td><td>0.459</td></tr><tr><th scope="row">UserRL</th><td>0.509</td><td>0.468</td><td>0.342</td><td>0.486</td></tr><tr><th scope="row">InfoPO</th><td>0.559</td><td>0.553</td><td>0.439</td><td>0.545</td></tr><tr><th scope="row">PPO</th><td>0.522</td><td>0.284</td><td>0.200</td><td>0.462</td></tr><tr class="ours"><th scope="row">eau</th><td>0.623</td><td>0.685</td><td>0.600</td><td>0.627</td></tr></tbody></table></div></details>
         <div class="tau-result"><div><span class="mini-index">Another interactive setting</span><h3>Generalizing to τ²-bench.</h3><p>On Qwen3-4B, eau reaches an aggregate score of <strong>21.5</strong>, compared with <strong>18.5</strong> for PPO. It leads on Airline and Telecom; InfoPO leads on Retail.</p></div><div class="tau-score"><strong>21.5</strong><span>vs. 18.5 PPO<br>+16.2% relative gain</span></div></div>
       </div>
     </section>
