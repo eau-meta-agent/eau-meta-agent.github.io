@@ -103,3 +103,7 @@ PR #3 已合并并上线；PR #4 于 2026-10-15 13:20:56 UTC 合并，只修改 
 ## 8. 下一次更新条件
 
 在部署后 24 小时、72 小时和 7 天复测 Q1–Q4，每次保留搜索结果与最终答案；再分别采集 ChatGPT Search App、Claude、Grok、豆包与 Gemini 的真实运行。PR #2 的 README 项目链接仍是单独待合并改动；若之后上线，必须在结果里注明，因为它会改变外部入口，影响归因。
+
+## 9. Henry wrapper 新一轮候选（2026-10-15）
+
+本轮改用 HenryCai11 的 autoresearch-wrapper GEO 扩展，建立节点依赖图并对 README 入口做两轮候选实验；具体图、节点操作、全局优先级及待填跨平台观测见 [案例报告](HENRY_GEO_CASE_STUDY.zh-CN.md)。本轮 README 候选处于新 PR，尚无部署后的自然搜索观测。上文 0/8 项目页、7/8 论文是此前已上线页面的 Codex web search 结果，不能写成本轮候选的后测。
