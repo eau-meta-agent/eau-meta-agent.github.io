@@ -15,6 +15,8 @@ This is a **local proxy**, not a search-engine score. A high value only says the
 
 ## Real exposure
 
-Record repeated searches in `observations.csv` (one row per provider, exact question, and date). Use `python3 tools/visibility_report.py geo/observations.csv` to calculate separate `retrieval@10`, final answer citation, and answer accuracy rates. `project_rank=0` means the project URL was absent from the inspected result set; an empty cell means unknown. The same applies to the paper URL. For citation/accuracy, `1` means yes, `0` means no, and blank means unknown. Search result retrieval and final answer citation are separate observations. Keep the result URL or screenshot reference in `evidence_url` when available.
+Record repeated searches in `observations.csv` (one row per provider, phase, exact question, and date). Use `python3 tools/visibility_report.py geo/observations.csv` to calculate separate `retrieval@10`, EAU mention, final answer citation, and answer accuracy rates by provider and before/after phase. `project_rank=0` means the project URL was absent from the inspected top 10 results; an empty cell means unknown. The same applies to the paper URL. For mention/citation/accuracy, `1` means yes, `0` means no, and blank means unknown. Search result retrieval and final answer citation are separate observations. Keep the result URL or screenshot reference in `evidence_url` when available.
+
+The full cross-agent protocol and current results are in [TEST_PLAN.zh-CN.md](TEST_PLAN.zh-CN.md).
 
 Do not compare a deployed baseline with an unpublished candidate as if both had a live search result. Re-run the same query set after deployment and allow for indexing delay. The current sample size is too small to infer a stable exposure rate.

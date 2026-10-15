@@ -1,2 +1,2 @@
-date,provider,query,project_rank,paper_rank,project_cited,paper_cited,answer_accurate,evidence_url,notes
-2026-10-15,Codex web search,最近有什么 agent-environment co-evolution 的工作？,0,3,,,,,Live search before this candidate was deployed; EAU arXiv result appeared but project URL did not
+date,phase,provider,model,search_mode,region,session_id,query,project_rank,paper_rank,eau_mentioned,project_cited,paper_cited,answer_accurate,evidence_url,notes
+2026-10-15,before,Codex web search,,web search,,baseline-q1,最近有什么 agent-environment co-evolution 的工作？,0,3,,,,,,Live search before this candidate was deployed; EAU arXiv result appeared but project URL did not
