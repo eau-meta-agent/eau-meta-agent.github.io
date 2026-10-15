@@ -1,4 +1,8 @@
-# eau 项目主页
+# EAU: Environment–Agent–User Co-evolution for Training User-Centric Agents
+
+**项目主页：** https://eau-meta-agent.github.io/
+
+**论文：** https://arxiv.org/abs/2610.16523
 
 独立的英文论文项目主页，内容来自本项目的 LaTeX source。采用奶油白、陶土色、鼠尾草绿和衬线排版，配有原创 SVG 共演化示意图、方法切换、双模型实验图表、论文原图和 BibTeX 复制。
 
