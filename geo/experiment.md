@@ -12,4 +12,4 @@ The evaluator at `/workspace/eau-geo-eval/v2.py` was written and run on the merg
 | 001 | Related research on the homepage, with links to SEAL, CoMAP, and GenEnv papers | 100/100 | Keep |
 | 002 | Separate topic page linked from the homepage and sitemap | 100/100 | Discard; same score with an extra page to maintain |
 
-The first live Codex web search for the question returned the EAU arXiv paper in position 3 and did not return the project URL among inspected results. The user also reported that the project was absent in their Doubao search, but without an exported result set this has not been added as a numerical observation. Search and citation rates require post-deployment repeat measurements.
+The first live Codex web search for the question returned the EAU arXiv paper in position 3 and did not return the project URL among inspected results. The user later pasted one Doubao final answer for the same question. It did not mention EAU or cite the project/paper URLs; its raw retrieval list remains unavailable, so retrieval rank is unknown. These are one-off pre-deployment observations. Search and citation rates require post-deployment repeat measurements.
