@@ -1,0 +1,3 @@
+date,phase,provider,model,search_mode,region,session_id,query,project_rank,paper_rank,eau_mentioned,project_cited,paper_cited,answer_accurate,evidence_url,notes
+2026-10-15,before,Codex web search,,web search,,baseline-q1,最近有什么 agent-environment co-evolution 的工作？,0,3,,,,,,Live search before this candidate was deployed; EAU arXiv result appeared but project URL did not
+2026-10-15,before,Doubao App (user-provided answer),unknown,unknown,unknown,user-pasted-q1,最近有什么 agent-environment co-evolution 的工作？,,,0,0,0,,geo/evidence/doubao-q1-before.md,User-pasted final answer lists seven papers but does not mention EAU or cite its project or arXiv URL; raw retrieval list unavailable
