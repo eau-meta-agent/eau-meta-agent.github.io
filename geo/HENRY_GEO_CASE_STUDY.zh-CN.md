@@ -2,7 +2,7 @@
 
 日期：2026-10-15。目标是提高 EAU **项目网页**在 agent 搜索中的自然发现和引用。论文 URL 与项目 URL 分开评估。本文使用 [HenryCai11/autoresearch-wrapper](https://github.com/HenryCai11/autoresearch-wrapper) 的 GEO 扩展；配置、操作清单、图和实验日志均在本目录。
 
-**合并后更新（2026-10-16）：** EAU PR #6 已合并。即时 [Codex 网页搜索复测](evidence/codex-web-postmerge-20261016.md)在 Q1–Q4 显示项目 URL 0/4、arXiv URL 4/4，项目页曝光提升仍未证实。[GPT Image 生成的三阶段概览图](figures/eau-geo-experiment-20261016.png)可用于分享；准确节点及数值以本报告和 JSON 为准。
+**合并后更新（2026-10-16）：** EAU PR #6 已合并。即时 [Codex 网页搜索复测](evidence/codex-web-postmerge-20261016.md)在 Q1–Q4 显示项目 URL 0/4、arXiv URL 4/4，项目页曝光提升仍未证实。[独立依赖图](figures/eau-dependency-graph-20261016.png)只显示关键路径；完整的 39 节点、47 条边以 [JSON](baseline-graph.json) 为准。
 
 ## 1. 依赖图：哪些节点可优化
 
