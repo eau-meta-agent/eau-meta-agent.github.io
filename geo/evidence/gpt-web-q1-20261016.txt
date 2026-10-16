@@ -1,0 +1,144 @@
+Query ID: Q1
+Query: 最近有什么 agent-environment co-evolution 的工作？
+Tool: GPT/Codex web search (this session)
+Result text follows:
+
+GitHub - aaronlyt/awesome-agentic-environment-evolving: A curated list of agentic environment synthesis, evolution, quality & scaling — built on three surveys (AEE, Environment Scaling, ACE lens) · GitHub (https://github.com/aaronlyt/awesome-agentic-environment-evolving)
+citeturn49search0 [wordlim: 200] Crawled: last month;   * Environment evolution: difficulty-driven curricula, self-play & world-model co-evolution, scaling-driven expansion, agent–environment co-evolution, generator–verifier co-evolution.
+### 4.4 Agent–Environment Co-Evolution
+
+Bidirectional: the environment tracks the agent's weaknesses and new capabilities; both drift together (AEE §8.6).
+
+Paper  | Venue  | One-liner (survey-derived)  | Tags  | arXiv
+--- | --- | --- | --- | ---
+GenEnv  | 2025  | Difficulty-aligned co-evolution of environment simulator and agent.  | `src:AEE-7.2,ACE` `evolution:co-evolve`  | 2512.19682
+EvoEnv  | 2026  | Single-policy generator+solver co-evolution.  | `evolution:co-evolve` `produces:E,v`  | 2605.14392
+Agent-World  | 2026  | Environment and policy co-evolve in a training arena.  | `src:ACE-T1` `evolution:co-evolve`  | 2604.18292
+Socratic-Zero  | 2025  | Data-free agent co-evolution via self-questioning.  | `src:ES` `evolution:co-evolve`  | 2509.24726
+From Trainee to Trainer  | 2026  | LLMs design their own training environments (multi-agent reasoning).  | `evolution:co-evolve`  | 2606.17682
+EigenData  | 2026  | Hierarchical multi-agent engine synthesizing tool dialogues with per-instance executable checkers; self-evolving loop + GRPO-style RL (τ²-bench Airline 73.0).  | `src:ACE` `evolution:co-evolve` `produces:q,τ,v`  | 2601.22607
+--------------------------------------------------------------------------------
+awesome-co-evolution/README.md at main · zongqing0068/awesome-co-evolution · GitHub (https://github.com/zongqing0068/awesome-co-evolution/blob/main/README.md)
+citeturn49search1 [wordlim: 200] Crawled: 4 weeks ago; Agent–Agent Co-Evolution studies joint evolution among agents in an otherwise fixed environment. ... Agent–Environment Co-Evolution extends the evolutionary process to environments containing task, feedback, and interaction spaces.
+## Stage 2: Agent–Environment Co-Evolution
+
+Agents co-evolve with an evolving environment. We classify methods by whether the main source of further evolutionary pressure is a changing task space, feedback space, or interaction space.
+
+### 2.1 Task-Space Co-Evolution
+
+#### Exposure and Selection
+
+  * 2026 · Role-Agent — Role-Agent: Bootstrapping LLM Agents via Dual-Role Evolution
+  * 2026 · SEAD — SEAD: Self-Evolving Agent for Multi-Turn Service Dialogue
+  * 2025 · HAP — Heterogeneous Adversarial Play in Interactive Environments
+  * 2025 · NCC — An Optimisation Framework for Unsupervised Environment Design
+  * 2024 · ReMiDi — Refining Minimax Regret for Unsupervised Environment Design
+  * 2023 · Teammate Curriculum — Curriculum Learning for Cooperation in Multi-Agent Reinforcement Learning
+  * 2023 · Portal — PORTAL: Automatic Curricula Generation for Multiagent Reinforcement Learning
+--------------------------------------------------------------------------------
+GitHub - zongqing0068/awesome-co-evolution: A curated paper list for co-evolution in agentic systems · GitHub (https://github.com/zongqing0068/awesome-co-evolution)
+citeturn49search2 [wordlim: 200] Crawled: 2 days ago; Agent–Agent Co-Evolution studies joint evolution among agents in an otherwise fixed environment. ... Agent–Environment Co-Evolution extends the evolutionary process to environments containing task, feedback, and interaction spaces.
+## Stage 2: Agent–Environment Co-Evolution
+
+Agents co-evolve with an evolving environment. We classify methods by whether the main source of further evolutionary pressure is a changing task space, feedback space, or interaction space.
+
+### 2.1 Task-Space Co-Evolution
+
+#### Exposure and Selection
+
+  * 2026 · Role-Agent — Role-Agent: Bootstrapping LLM Agents via Dual-Role Evolution
+  * 2026 · SEAD — SEAD: Self-Evolving Agent for Multi-Turn Service Dialogue
+  * 2025 · HAP — Heterogeneous Adversarial Play in Interactive Environments
+  * 2025 · NCC — An Optimisation Framework for Unsupervised Environment Design
+  * 2024 · ReMiDi — Refining Minimax Regret for Unsupervised Environment Design
+  * 2023 · Teammate Curriculum — Curriculum Learning for Cooperation in Multi-Agent Reinforcement Learning
+  * 2023 · Portal — PORTAL: Automatic Curricula Generation for Multiagent Reinforcement Learning
+  * 2026 · Agent-World — Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence
+  * 2026 · COvolve — COvolve: Adversarial Co-Evolution of Large-Language-Model-Generated Policies and Environments via Two-Player Zero-Sum Game
+  * 2026 · Adaptive EnvGen — Towards Adaptive Environment Generation for Training Embodied Agents
+  * 2026 · DiCode — Dreaming in Code for Curriculum Learning in Open-Ended Worlds
+  * 2026 · DEGen — Improving Regret Approximation for Unsupervised Dynamic Environment Generation
+  * 2025 · Driving Scenarios ACL — Automatic Curriculum Learning for Driving Scenarios: Towards Robust and Efficient Reinforcement Learning
+  * 2024 · Eurekaverse — Eurekaverse: Environment Curriculum Generation via Large Language Models
+  * 2024 · ADD — Adversarial Environment Design via Regret-Guided Diffusion Models
+--------------------------------------------------------------------------------
+SEAL: Synergistic Co-Evolution of Agents and Learning Environments (https://arxiv.org/abs/2605.24426)
+citeturn49academia12 [wordlim: 200] Published: 4 months ago; Title: SEAL: Synergistic Co-Evolution of Agents and Learning Environments ... Large Language Model (LLM) agents are increasingly improved through interaction, yet most self-evolution methods adapt either the policy or the learning environment in isolation.We identify this structural gap as \emph{Agent-Environment Misalignment}: the agent's capability frontier changes during training, while the environment that provides supervision remains static or only weakly coupled to the agent's revealed failures.
+Title: SEAL: Synergistic Co-Evolution of Agents and Learning Environments
+Authors: Yihao Hu, Zhihao Wen, Xiujin Liu, Pan Wang, Xin Zhang, Wei Wu
+Date: Sat May 23 06:41:31 2026
+
+Large Language Model (LLM) agents are increasingly improved through interaction, yet most self-evolution methods adapt either the policy or the learning environment in isolation. We identify this structural gap as \emph{Agent-Environment Misalignment}: the agent's capability frontier changes during training, while the environment that provides supervision remains static or only weakly coupled to the agent's revealed failures. We propose SEAL, a closed-loop co-evolution framework for interactive tool-use agents. SEAL collects on-policy trajectories under executable verification, diagnoses failed rollouts into turn-level failure labels, and uses these diagnoses as a shared signal for both environment-side adaptation and model-side policy optimization. The environment evolves its training-time learning interface by exposing clearer tool affordance cues, constraint information, and recovery-oriented feedback, while the policy is updated with diagnosis-guided advantage reweighting. Extensive experiments across in-distribution and out-of-distribution multi-turn tool-use evaluations show that SEAL improves low-resource agent learning: with only 400 training samples, it yields +8.25 to +26.25 average-point gains across three backbones and exhibits positive out-of-distribution transfer. These results demonstrate the value of jointly adapting the learner and its training-time learning substrate for robust self-improving LLM agents.--------------------------------------------------------------------------------
+Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design (https://arxiv.org/abs/2608.10299)
+citeturn49academia13 [wordlim: 200] Published: 2 months ago; Agent--Environment Co-Evolution extends this loop to adaptive tasks, feedback, and interaction spaces that change with the agents.
+Title: Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design
+Authors: Qing Zong, Jiayu Liu, Junhao Shen, Zecong Tang, Linsi Wu, Yuxuan Liu, Rui Wang, Zhaowei Wang, Weiqi Wang, Cheng Qian, Xiusi Chen, Yangqiu Song
+Date: Mon Aug 10 23:10:40 2026
+
+Agentic systems are increasingly expected to improve after deployment, yet single-entity self-evolution is often bounded by a static learning context, such as fixed tasks and feedback. This survey focuses on co-evolution in agentic systems, a multi-component form of self-evolution in which multiple agents and their environment impose adaptive pressure on one another. To organize existing papers, we propose a progressive three-stage taxonomy that traces how the system gradually sheds human-engineered constraints. Agent--Agent Co-Evolution studies how agents adapt through dynamic peers, including adversarial, collaborative, and organizational adaptation. Agent--Environment Co-Evolution extends this loop to adaptive tasks, feedback, and interaction spaces that change with the agents. Meta Co-Evolution further explores the possibility of making the evolution mechanism itself evolvable. We also discuss open challenges in evaluating such systems, scaling them across multiple components, and keeping increasingly autonomous evolutionary processes safe and controllable. This survey provides a unified foundation for building robust and open-ended agentic systems that can improve beyond fixed human-designed paths.--------------------------------------------------------------------------------
+EAU: Environment-Agent-User Co-evolution for Training User-Centric Agents (https://arxiv.org/abs/2610.16523)
+citeturn49academia14 [wordlim: 200] Published: 3 days ago; Title: EAU: Environment-Agent-User Co-evolution for Training User-Centric Agents
+--------------------------------------------------------------------------------
+scientific-eval-environments/zh/works/co-evolution-agentic-systems-survey.md at main · yuema137/scientific-eval-environments · GitHub (https://github.com/yuema137/scientific-eval-environments/blob/main/zh/works/co-evolution-agentic-systems-survey.md)
+citeturn49search3 [wordlim: 200] Crawled: last month; # Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design (2026) ... 它不评估任何 agent 在科学或研究活动上的表现。 ... 综述的起点是：单实体的自我演化受限于静态的学习语境——一个只面对固定任务与固定反馈去改进的 agent，迟早会把这个语境能教给它的东西学完。 ...   * Agent–Environment 共同演化按环境的哪一部分在动来拆分（任务、反馈，还是交互空间），把原本容易混作一谈的几条研究线索分了开来。
+--------------------------------------------------------------------------------
+GitHub - XMUDeepLIT/Awesome-Self-Evolving-Agents: A Survey of Self-Evolving Agents | A curated list of resources (surveys, papers, benchmarks, and opensource projects) on Self-Evolving Agents. · GitHub (https://qgithub.com/XMUDeepLIT/Awesome-Self-Evolving-Agents)
+citeturn49search4 [wordlim: 200] Crawled: last month;       title={A Systematic Survey of Self-Evolving Agents: From Model-Centric to Environment-Driven Co-Evolution}, ... ### Multi-Agent Policy Co-Evolution
+--------------------------------------------------------------------------------
+awesome-environment-scaling/surveys/2026-08/environment_scaling_survey_2026.md at main · yunfanye/awesome-environment-scaling · GitHub (https://git.mitgai.net/yunfanye/awesome-environment-scaling/blob/main/surveys/2026-08/environment_scaling_survey_2026.md)
+citeturn49search5 [wordlim: 200] Published: last month; Crawled: 3 days ago; Adaptive portfolios and environment–agent co-evolution
+--------------------------------------------------------------------------------
+Environment Evolution for Terminal Agents (https://arxiv.org/abs/2609.04128)
+citeturn49academia15 [wordlim: 200] Published: last month; Recent co-evolution methods iteratively synthesize environments near the model's learnable frontier based on weaknesses exposed during rollouts. ... We derive three evolution directions that influence environment difficulty from the multi-turn learning objective and then implement evolution along these directions through a loop-engineered multi-agent harness.
+--------------------------------------------------------------------------------
+Environment Evolution for Terminal Agents | ArcXiv (https://arcxiv.org/abs/2609.04128)
+citeturn49search6 [wordlim: 200] Published: last month; Crawled: 3 weeks ago; Recent co-evolution methods iteratively synthesize environments near the model's learnable frontier based on weaknesses exposed during rollouts. ... We derive three evolution directions that influence environment difficulty from the multi-turn learning objective and then implement evolution along these directions through a loop-engineered multi-agent harness.
+--------------------------------------------------------------------------------
+论文综述：智能体系统中的协同进化——迈向超越人类设计的自主进化 | Huggingface paper 论文综述 (https://paper.oopus.info/papers/2026-08-16-co-evolution-agentic-systems/)
+citeturn49search7 [wordlim: 200] Published: 2 months ago; Crawled: 6 days ago; ### 2.3 阶段二：Agent–Environment 协同进化 ...   * 暴露与选择（Exposure and Selection）：从已有任务池中挑出当前最有价值的那些，思想源头是课程学习（curriculum learning），代表工作有 PORTAL、SEAD。 ... 代表工作非常密集：GenEnv、Tool-r0、Agent0、SENTINEL、CoEvolve、AgentEvolver、Search self-play、MobileForge、SEAgent、WebRL、UI-voyager、EvoCUA、Socratic-SWE、RLAnything。
+--------------------------------------------------------------------------------
+GitHub - YuxingLu613/awesome-agentic-evolution: From self-improving agents to co-evolving, open-ended agent ecosystems. · GitHub (https://github.com/YuxingLu613/awesome-agentic-evolution)
+citeturn49search8 [wordlim: 200] Crawled: last week; > From self-improving agents to co-evolving, open-ended agent ecosystems. ...   * Environment Evolution for Terminal Agents — Evolves terminal environments off-policy along difficulty directions to sustain learning signals, improving long-horizon RL on Terminal-Bench 2.1.
+--------------------------------------------------------------------------------
+Agentic Environment Engineering for Large Language Models: A Survey of Environment Modeling, Synthesis, Evaluation, and Application | arXiv Science (https://arxiv.science/abs/2606.12191)
+citeturn49search9 [wordlim: 200] Published: 4 months ago; Crawled: today; Thirdly, the corresponding environment applications from the perspective of agent-environment co-evolution are discussed.
+--------------------------------------------------------------------------------
+Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence | arXiv Science (https://arxiv.science/abs/2604.18292)
+citeturn49search10 [wordlim: 200] Published: 5 months ago; Crawled: yesterday; Agent-World has two main components: (1) Agentic Environment-Task Discovery, which autonomously explores topic-aligned databases and executable tool ecosystems from thousands of real-world environment themes and synthesizes verifiable tasks with controllable difficulty; and (2) Continuous Self-Evolving Agent Training, which combines multi-environment reinforcement learning with a self-evolving agent arena that automatically identifies capability gaps through dynamic task synthesis and drives targeted learning, enabling the co-evolution of agent policies and environments.
+--------------------------------------------------------------------------------
+EAU: Environment-Agent-User Co-evolution for Trai… - arXiv (https://arxiv-troller.com/paper/3340860/)
+citeturn49search11 [wordlim: 200] Published: 4 days ago; Crawled: yesterday; # EAU: Environment-Agent-User Co-evolution for Training User-Centric Agents
+--------------------------------------------------------------------------------
+Agent and Agency | 代理与能力　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(Un)Real | (非) 现实 (https://on-curating.org/files/oc/dateiverwaltung/issue64/OnCurating_Issue64_WEB.pdf)
+citeturn49search16 [wordlim: 200] Published: 8 months ago; Agent and Agency | 代理与能力　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(Un)Real | (非) 现实 ... A top bracket/arrow labeled “Coevolution” loops across the environment.
+--------------------------------------------------------------------------------
+Analysis of Interaction and Co-evolution between Enterprise and Environment—A Perspective of Theory of Co-Evolution (https://www.scirp.org/pdf/25-1.3.pdf)
+citeturn49search17 [wordlim: 200] Published: 15.6 years ago; Crawled: 12.8 years ago; Analysis of Interaction and Co-evolution between Enterprise and Environment—A Perspective of Theory of Co-Evolution ... Enterprise co-evolves with environment by population co-evolution, adaptation and anti-adaptation and gene mutation. ... 基金资助：武汉市社会科学基金项目：推进武汉自主创新示范区建设的产学研联盟模式研究（项目号：whsk10023）。 ... 赵锡斌（2007）提出并运用环境系统观、均衡与非均衡、内生性、可调适性和环境创新等核心概念，对企业环境和企业与环境互动关系及传导机制、企业环境的一般特征与中国特色、企业环境分析与评价等问题，从新视角进行了系统探讨。[
+--------------------------------------------------------------------------------
+1 相关工作
+
+国内外学者和研究机构从不同的视角对分布式软件动态演化及其自适应机制进行了研究。 (https://www.sciengine.com/doi/pdf/49151EFCF53040F2B54D252D851EA1D1)
+citeturn49search18 [wordlim: 200] Published: 11.6 years ago; Crawled: 11.5 years ago; • 首先，从体系结构角度出发的代表性工作包括 CMU 的 Rainbow[15,16]，它提供了一种在系统运行时保存一个或者多个系统体系结构模型的演化方法；UCI 的 ArchStudio[17]基于多层次总线结构的体系结构风格，利用一个外部的体系结构演化管理器实现对体系结构修改脚本的解释和执行[18]。• 从对象角度出发的研究有美国华盛顿大学研制开发的自适应通信环境 ACE(adaptive communication environment)[19]，这是一个基于面向对象的工具开发包，利用运行时的动态配置功能实现对服务自适应演化的支持；• 在利用 Agent 技术实现分布式软件系统自适应演化的研究中，IBM 公司研制的基于 Java 的 Agent 开发部署环境——ABLE(agent building and learning environment)[20]提供了由智能推理、学习构件包与构造智能 Agent 的框架构成的开发库，但该框架假定所开发的系统是静态和封闭的，无法满足开放环境下自适应系统的开发；英国的 Greer 和 Xiao 研究的 AAM(adaptive agent model)使用可配置的交互模型驱动自适应 Agent 的行为[21]，该模型驱动方法类似于本文中利用演化规则驱动 Agent 间协作关系以进行自适应更改的方法，然而与本文方法相比，文献[21]定义的交互模型过于复杂，对开发人员要求较高；针对网构软件面临的环境显式化、实体主体化、运行适应性等问题，常志明等提出了基于 Agent 网构件的构件模型，将 DAgent 作为网构软件中的构件形式，利用 EBDI(environments, beliefs, desires, intensions)结构描述构件的自主行为[22]，通过动态绑定关系体现构件的动态演化行为。
+--------------------------------------------------------------------------------
+Coevolution (https://en.wikipedia.org/wiki/Coevolution)
+citeturn49search19 [wordlim: 200] Crawled: 7 months ago; Mosaic, along with general coevolution, most commonly occurs at the population level and is driven by both the biotic and the abiotic environment.These environmental factors can constrain coevolution and affect how far it can escalate.
+--------------------------------------------------------------------------------
+XingheTalk (https://callanwu.github.io/assest/XingheTalk.pdf)
+citeturn49search20 [wordlim: 200] Crawled: 6 months ago; • Agents act on the environment, and the environment in turn provides feedback to the agents; thus, agent research should shift from a purely task-driven paradigm to a task–environment co-modeling paradigm.
+--------------------------------------------------------------------------------
+技术改变生活，但是更差了。 (https://www.reddit.com/r/KanagawaWave/comments/1thiamq/%E6%8A%80%E6%9C%AF%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB%E4%BD%86%E6%98%AF%E6%9B%B4%E5%B7%AE%E4%BA%86/)
+citeturn49reddit21 [wordlim: 200] Published: 4 months ago; 现在是每天起床轮流压力codex和claude，因为公司给的账号token量大管饱所以一直都在work，睡前还会挂点类似deep research的task让大模型在我睡觉的时候实时调研一下已经熟悉的研究领域的进展以及literature review一些新的用得上的研究领域都在干啥，因为自己啥也不写纯push agent所以经常会红温，等agent回复的碎片时间看啥都感觉很焦虑，agent又很笨经常用复杂的方法处理简单的事情，一来一回总产出好像也没有增加多少，但是生活状态差了几百倍，也属于是技术改变生活了，有人感同身受吗。 ... 完全编程&ai门外汉，但是最近在用cc研究怎么搞个5块工具app大骗钱去 ... 今天quota被我干爆了之后想要手写代码，恍然间竟有种提笔忘字的无力感，和毒品一样想要ai agent帮忙，静下心来读了一下代码发现其实也没那么困难，但是根本进不去那个心流的状态了
+--------------------------------------------------------------------------------
+软件学报ISSN 1000-9825, CODEN RUXUEW (https://www.sciengine.com/parse/pdf/1000-9825/AE7EB00BE6D445EE8A39816B0B5F54BC.pdf?attname=Agent-Based+Software+Adaptive+Dynamic+Evolution+Mechanism.pdf)
+citeturn49search22 [wordlim: 200] Published: 11.5 years ago; Key words:  distributed software system; agent; adaptive software; dynamic evolution; environmental awareness ... 难以满足开放、动态环境下软件自适应动态演化的需求[3,4],因此,将能够自主学习并适应环境的智能体与软件 ... 随着网络技术的不断发展,目前,诸如全球联网的分布式金融系统、交通管制系统、指挥控制系统等资源 ... 的动态演化需求时,存在着有别于一般软件系统的两个关键问题:首先,由于分布式软件系统各节点的实现方法 ... 变化;并采用一种改进的合同网协议形成多Agent 协作机制,实现演化过程中分布式节点的更替演化;并通过将 ... 变化的两种演化需求时,自适应演化机制的具体过程,并进行相关算法有效性的分析. ... 所做的工作,并对下一步需要改进的研究方向和工作内容进行展望.
+--------------------------------------------------------------------------------
+展望未来：Agent 生态的演进趋势与社会影响 (https://www.cdut.edu.cn/__local/9/37/E5/7235598F7EDC069B9274E213E4A_27951A7F_4F7DE7.pdf)
+citeturn49search23 [wordlim: 200] Published: 6 months ago; 展望未来：Agent 生态的演进趋势与社会影响 ... 个人工作效率将不再受限于生物体能，24/7 全天候运行的 Agent 团队将使生产力实现质的飞跃。 ... 学习交流可加AI肖睿团队助理微信号（ABZ2829）
+--------------------------------------------------------------------------------
+Multi-agent reinforcement learning (https://en.wikipedia.org/wiki/Multi-agent_reinforcement_learning)
+citeturn49search24 [wordlim: 200] Crawled: 7 months ago; It focuses on studying the behavior of multiple learning agents that coexist in a shared environment. ... Multi-Agent Reinforcement Learning as a Computational Tool for Language Evolution Research: Historical Context and Future Challenges.
+--------------------------------------------------------------------------------
+个体为本模型 (https://zh.wikipedia.org/wiki/%E4%B8%AA%E4%BD%93%E4%B8%BA%E6%9C%AC%E6%A8%A1%E5%9E%8B)
+citeturn49search25 [wordlim: 200] Crawled: 8 months ago; 绝大多数的基于行为体模型包括：（1）大量通过各种指标（个体粒度）区分的行为体；（2）试探性决策方式；（3）学习规则或适应过程；（4）一个交流拓扑网络和（5）一个非行为体的环境。 ... 最近的發展則是大量利用圖形處理單元平行算法。 ... Bonabeau (2002) 曾對ABM建模工作作了當時的調查。 ... The Complexity of Cooperation: Agent-Based Models of Competition and Collaboration. ... 其他著名的發展包括卡內基·梅隆大學的凱瑟琳·卡利(Kathleen Carley)的 ABM，探索社交網絡和文化的共同演化(co-evolution)。 ... 最近在複雜適應性系統的建模與模擬的研究已經顯示，結合ABM和基於網路的複雜模型(complex network based models)的必要性。
+
+

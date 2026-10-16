@@ -107,3 +107,11 @@ PR #3 已合并并上线；PR #4 于 2026-10-15 13:20:56 UTC 合并，只修改 
 ## 9. Henry wrapper 新一轮候选（2026-10-15）
 
 本轮改用 HenryCai11 的 autoresearch-wrapper GEO 扩展，建立节点依赖图并对 README 入口做两轮候选实验；具体图、节点操作、全局优先级及待填跨平台观测见 [案例报告](HENRY_GEO_CASE_STUDY.zh-CN.md)。本轮 README 候选处于新 PR，尚无部署后的自然搜索观测。上文 0/8 项目页、7/8 论文是此前已上线页面的 Codex web search 结果，不能写成本轮候选的后测。
+
+## 10. PR #6 合并后的即时观测（2026-10-16）
+
+PR #6 已于 02:59:31 UTC 合并。约 03:00 UTC 用 Codex 网页搜索工具分别查询 Q1–Q4，显示结果中的项目 URL 为 **0/4**、arXiv 论文 URL 为 **4/4**。这次没有稳定的 top-10 排名或最终答案样本，不能换算为 App 召回率/引用率；复测紧邻合并，也无法分离部署与索引延迟。完整口径与网站 HTTP 检查见[合并后证据](evidence/codex-web-postmerge-20261016.md)。上述第 8、9 节为当时的历史记录，本节是最新状态。
+
+## 11. 只用 GPT 网页搜索返回的入口观测
+
+同日再次运行 Q1–Q4，保留了四份[原始工具响应](evidence/gpt-web-q1-20261016.txt)及[提取的全部来源 URL](gpt-web-search-observations.json)。项目 URL 0/4、论文 URL 4/4、EAU 仓库 URL 0/4。当前[下一实验次序](priorities.json)只依据真实返回中的来源 URL 与缺失的项目 URL；历史“图上可达 11 个结果”的[结构评分](legacy-structural-priorities.json)已停用。论文页到项目页的链接是值得先验证的入口假设，其提升效果仍未测得。当前范围仅为本会话 GPT/Codex 网页搜索工具，其他平台留待以后独立采样。
