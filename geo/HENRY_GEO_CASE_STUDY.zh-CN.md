@@ -54,7 +54,21 @@ python3 "$WRAPPER" geo-prioritize --repo . --config geo/config.json --observatio
 
 具体 wrapper 命令、评分和 CSV 语义见其 `GEO.md`。操作需在 wrapper 分配的候选 Git worktree 中执行 `--apply`；此处列出的 `geo-apply` 不带该参数，只预览变更。
 
-## 3. 全局优先级：跨平台权衡
+## 3. 当前优先级：只用本会话 GPT 网页搜索的真实返回
+
+2026-10-16 再次对 Q1–Q4 各调用一次本会话网页搜索工具，原始响应分别保存为 [Q1](evidence/gpt-web-q1-20261016.txt)、[Q2](evidence/gpt-web-q2-20261016.txt)、[Q3](evidence/gpt-web-q3-20261016.txt)、[Q4](evidence/gpt-web-q4-20261016.txt)。[提取出的 URL](gpt-web-search-observations.json)显示：**项目域名 0/4、EAU arXiv 论文 4/4、EAU GitHub 仓库 0/4**。统计的是工具响应中显示的来源 URL，并无稳定的前十名次，也没有任何其他 App 的结果。
+
+新版 [`geo-prioritize`](priorities.json)不再把图上“可达”的 11 个虚拟结果节点当作证据，也不使用手填的缺口标记和成本评分。它只数“某个入口 URL 出现在真实返回中，同时项目 URL 没出现”的查询次数。论文页对应 **4 个可测试入口机会**，因此排在下一次**验证链接和设计实验**的首位；仓库、首页等来源在这四次返回中没有出现，无法凭本观测给它们排效果次序。所有改动的 `effect_status` 仍是 `unmeasured`。这个次序表示值得先测试哪里，**不是**论文链接会让项目页曝光提升 4 次。
+
+复现：
+
+```bash
+python3 tools/build_gpt_web_evidence.py
+python3 /path/to/autoresearch-wrapper/scripts/autoresearch_wrapper.py geo-prioritize \
+  --repo . --config geo/config.json --search-evidence geo/gpt-web-search-observations.json
+```
+
+### 历史结构评分（已停用，不作为当前优先级）
 
 [config.json](config.json) 对五个平台暂设各 0.2，对项目召回、项目引用、EAU 提及、论文召回和答案准确率分别设 0.30/0.35/0.15/0.10/0.10。这些是**公开、可改的决策权重**，不是平台流量或效果的测量。候选必须按同平台、同问题、同指标的前后数据配对；空白是未知，不能按 0 处理。`geo-compare` 会给全局增量的上下界；任一已观测平台跌幅超过 0.05 时也否决“已证实的全局收益”。
 
@@ -65,7 +79,7 @@ python3 "$WRAPPER" geo-prioritize --repo . --config geo/config.json --observatio
 | — | GitHub About | 0，已处理 | description/homepage 已写入 | 后续观测与 README 变化会混杂，需记录时间 |
 | — | 首页身份、相关工作、抓取入口 | 0，当前无缺口 | 本轮维持 | 无需为了本地满分重复添加内容 |
 
-结构优先分来自 [priorities.json](priorities.json) 的**改动前缺口快照**，反映图可达性和估计成本，不是预期曝光率。README 候选进入本分支后，这个缺口在候选状态已关闭。若将来观测到豆包改善、DeepSeek 变差，应先计算同权重的全局增量和平台退化阈值；即使代理分数上升，也不能自动采纳。Henry 扩展的单元测试覆盖了这个冲突案例。
+历史结构优先分保存在 [legacy-structural-priorities.json](legacy-structural-priorities.json)，仅供解释原实验为什么先做 README；它把人工依赖路径当作“可达结果”，证据等级不足，已从当前排序移除。若将来观测到豆包改善、DeepSeek 变差，应另用真实的同平台前后结果计算全局增量和退化阈值；本轮只看 GPT 网页搜索结果。Henry 扩展的单元测试覆盖了平台冲突案例。
 
 ## 4. 前后结果与待填数据
 

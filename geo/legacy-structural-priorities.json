@@ -1,0 +1,187 @@
+[
+  {
+    "id": "github_readme_backlink",
+    "nodes": [
+      "file:README.md"
+    ],
+    "reachable_outcomes": [
+      "outcome:ChatGPT Search:answer",
+      "outcome:ChatGPT Search:retrieval",
+      "outcome:Claude Web Search:answer",
+      "outcome:Claude Web Search:retrieval",
+      "outcome:DeepSeek App:answer",
+      "outcome:DeepSeek App:retrieval",
+      "outcome:Doubao App:answer",
+      "outcome:Doubao App:retrieval",
+      "outcome:Grok:answer",
+      "outcome:Grok:retrieval",
+      "outcome:site-discovery"
+    ],
+    "structural_priority": 12.0,
+    "current_gap": true,
+    "owner": "repo",
+    "status": "hypothesis_only",
+    "global_evaluation": {
+      "platforms": {
+        "ChatGPT Search": {
+          "delta_known_cells": 0.0,
+          "coverage": 0.0,
+          "cells": []
+        },
+        "Doubao App": {
+          "delta_known_cells": 0.0,
+          "coverage": 0.0,
+          "cells": []
+        },
+        "DeepSeek App": {
+          "delta_known_cells": 0.0,
+          "coverage": 0.0,
+          "cells": []
+        },
+        "Claude Web Search": {
+          "delta_known_cells": 0.0,
+          "coverage": 0.0,
+          "cells": []
+        },
+        "Grok": {
+          "delta_known_cells": 0.0,
+          "coverage": 0.0,
+          "cells": []
+        }
+      },
+      "observed_weight": 0.0,
+      "weighted_delta_known_cells": 0.0,
+      "global_delta_bounds": [
+        -1.0,
+        1.0
+      ],
+      "regressions": [],
+      "verdict": "insufficient_evidence_or_regression",
+      "warning": "Unknown observations are bounded, never imputed as zero; local readiness is excluded."
+    }
+  },
+  {
+    "id": "paper_to_project_backlink",
+    "nodes": [
+      "external:paper-backlink"
+    ],
+    "reachable_outcomes": [
+      "outcome:ChatGPT Search:answer",
+      "outcome:ChatGPT Search:retrieval",
+      "outcome:Claude Web Search:answer",
+      "outcome:Claude Web Search:retrieval",
+      "outcome:DeepSeek App:answer",
+      "outcome:DeepSeek App:retrieval",
+      "outcome:Doubao App:answer",
+      "outcome:Doubao App:retrieval",
+      "outcome:Grok:answer",
+      "outcome:Grok:retrieval",
+      "outcome:site-discovery"
+    ],
+    "structural_priority": 6.0,
+    "current_gap": true,
+    "owner": "paper-author",
+    "status": "hypothesis_only",
+    "global_evaluation": null
+  },
+  {
+    "id": "crawl_entrypoints",
+    "nodes": [
+      "file:robots.txt",
+      "file:sitemap.xml"
+    ],
+    "reachable_outcomes": [
+      "outcome:ChatGPT Search:answer",
+      "outcome:ChatGPT Search:retrieval",
+      "outcome:Claude Web Search:answer",
+      "outcome:Claude Web Search:retrieval",
+      "outcome:DeepSeek App:answer",
+      "outcome:DeepSeek App:retrieval",
+      "outcome:Doubao App:answer",
+      "outcome:Doubao App:retrieval",
+      "outcome:Grok:answer",
+      "outcome:Grok:retrieval",
+      "outcome:site-discovery"
+    ],
+    "structural_priority": 0.0,
+    "current_gap": false,
+    "owner": "repo",
+    "status": "hypothesis_only",
+    "global_evaluation": null
+  },
+  {
+    "id": "github_about_identity",
+    "nodes": [
+      "external:repository-metadata"
+    ],
+    "reachable_outcomes": [
+      "outcome:ChatGPT Search:answer",
+      "outcome:ChatGPT Search:retrieval",
+      "outcome:Claude Web Search:answer",
+      "outcome:Claude Web Search:retrieval",
+      "outcome:DeepSeek App:answer",
+      "outcome:DeepSeek App:retrieval",
+      "outcome:Doubao App:answer",
+      "outcome:Doubao App:retrieval",
+      "outcome:Grok:answer",
+      "outcome:Grok:retrieval",
+      "outcome:site-discovery"
+    ],
+    "structural_priority": 0.0,
+    "current_gap": false,
+    "owner": "repo-admin",
+    "status": "hypothesis_only",
+    "global_evaluation": null
+  },
+  {
+    "id": "homepage_identity",
+    "nodes": [
+      "meta:title",
+      "meta:description",
+      "meta:canonical",
+      "meta:schema"
+    ],
+    "reachable_outcomes": [
+      "outcome:ChatGPT Search:answer",
+      "outcome:ChatGPT Search:retrieval",
+      "outcome:Claude Web Search:answer",
+      "outcome:Claude Web Search:retrieval",
+      "outcome:DeepSeek App:answer",
+      "outcome:DeepSeek App:retrieval",
+      "outcome:Doubao App:answer",
+      "outcome:Doubao App:retrieval",
+      "outcome:Grok:answer",
+      "outcome:Grok:retrieval",
+      "outcome:site-discovery"
+    ],
+    "structural_priority": 0.0,
+    "current_gap": false,
+    "owner": "repo",
+    "status": "hypothesis_only",
+    "global_evaluation": null
+  },
+  {
+    "id": "homepage_related_work",
+    "nodes": [
+      "section:research-landscape"
+    ],
+    "reachable_outcomes": [
+      "outcome:ChatGPT Search:answer",
+      "outcome:ChatGPT Search:retrieval",
+      "outcome:Claude Web Search:answer",
+      "outcome:Claude Web Search:retrieval",
+      "outcome:DeepSeek App:answer",
+      "outcome:DeepSeek App:retrieval",
+      "outcome:Doubao App:answer",
+      "outcome:Doubao App:retrieval",
+      "outcome:Grok:answer",
+      "outcome:Grok:retrieval",
+      "outcome:site-discovery"
+    ],
+    "structural_priority": 0.0,
+    "current_gap": false,
+    "owner": "repo",
+    "status": "hypothesis_only",
+    "global_evaluation": null
+  }
+]

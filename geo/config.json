@@ -25,11 +25,11 @@
   "min_comparison_coverage": 0.8,
   "max_platform_regression": 0.05,
   "interventions": [
-    {"id": "github_readme_backlink", "nodes": ["file:README.md"], "cost": 1, "current_gap": true, "owner": "repo", "candidate_id": "readme-backlink"},
-    {"id": "github_about_identity", "nodes": ["external:repository-metadata"], "cost": 0.5, "current_gap": false, "owner": "repo-admin"},
-    {"id": "paper_to_project_backlink", "nodes": ["external:paper-backlink"], "cost": 2, "current_gap": true, "owner": "paper-author"},
-    {"id": "homepage_identity", "nodes": ["meta:title", "meta:description", "meta:canonical", "meta:schema"], "cost": 2, "current_gap": false, "owner": "repo"},
-    {"id": "homepage_related_work", "nodes": ["section:research-landscape"], "cost": 2, "current_gap": false, "owner": "repo"},
-    {"id": "crawl_entrypoints", "nodes": ["file:robots.txt", "file:sitemap.xml"], "cost": 1, "current_gap": false, "owner": "repo"}
+    {"id": "github_readme_backlink", "nodes": ["file:README.md"], "source_url": "https://github.com/eau-meta-agent/eau-meta-agent.github.io", "cost": 1, "current_gap": true, "owner": "repo", "candidate_id": "readme-backlink"},
+    {"id": "github_about_identity", "nodes": ["external:repository-metadata"], "source_url": "https://github.com/eau-meta-agent/eau-meta-agent.github.io", "cost": 0.5, "current_gap": false, "owner": "repo-admin"},
+    {"id": "paper_to_project_backlink", "nodes": ["external:paper-backlink"], "source_url": "https://arxiv.org/abs/2610.16523", "cost": 2, "current_gap": true, "owner": "paper-author"},
+    {"id": "homepage_identity", "nodes": ["meta:title", "meta:description", "meta:canonical", "meta:schema"], "source_url": "https://eau-meta-agent.github.io/", "cost": 2, "current_gap": false, "owner": "repo"},
+    {"id": "homepage_related_work", "nodes": ["section:research-landscape"], "source_url": "https://eau-meta-agent.github.io/", "cost": 2, "current_gap": false, "owner": "repo"},
+    {"id": "crawl_entrypoints", "nodes": ["file:robots.txt", "file:sitemap.xml"], "source_url": "https://eau-meta-agent.github.io/", "cost": 1, "current_gap": false, "owner": "repo"}
   ]
 }
