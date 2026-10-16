@@ -1,5 +1,7 @@
 # EAU GEO：探索、修改、评测的完整过程
 
+本页是**已经发生的历史过程**。若要根据当前证据选择下一步，请看[条件决策树](DECISION_TREE.zh-CN.md)。
+
 ![EAU GEO 优化过程](figures/geo-optimization-process.svg)
 
 这张过程图由 [实验记录](henry-run-results.tsv) 和 [真实搜索返回 URL](gpt-web-search-observations.json)生成。可用 `python3 tools/build_geo_process.py` 重建。图中的实线表示已发生的工作；最后通向新评测的虚线表示待完成。
@@ -17,10 +19,10 @@
 
 在本会话的 GPT/Codex 网页搜索工具中，用 [Q1–Q4](gpt-web-search-observations.json) 查询：EAU 项目页 URL 0/4，EAU 论文 URL 4/4，EAU GitHub 仓库 URL 0/4。这里统计的是工具返回的来源 URL，不是 ChatGPT App 的结果，也不是稳定的前十排名。
 
-于是新的 [交互探索树](figures/geo-exploration-tree.html)沿着真实可见的论文页分支，给“论文页 → 项目页链接”标记**下一测试 #1**。它表示值得先核实与测试的入口，不表示该链接已存在或能提高召回。项目页和仓库入口在这四次返回中未出现；其他干预保持未排序。
+于是新的 [交互探索树](figures/geo-exploration-tree.html)沿着真实可见的论文页分支，给“论文页 → 项目页路径”标记**下一测试 #1**。随后独立检查确认：[arXiv HTML 论文页](https://arxiv.org/html/2610.16523v1)已有可点击的项目链接；摘要页经 HTML 页可达项目页。该路径是否影响搜索召回尚未实测。项目页和仓库入口在这四次返回中未出现；其他干预保持未排序。
 
 ## 第三阶段：尚未完成的闭环
 
-论文页链接状态需要核实；若由论文作者修改，还需记录变更时间和页面版本。之后按 [测试方案](TEST_PLAN.zh-CN.md)在同平台、同查询、同指标下收集独立的前后搜索和答案。只有配对数据齐备时，`geo-compare` 才能计算跨平台增量、缺失数据上下界和退化阈值。目前 [全局比较](global-comparison.json)覆盖率为 0；没有证据证明 EAU 项目页曝光已经提升。
+现有论文 HTML 链接已确认，无需把“添加论文链接”当作下一次改动。按 [测试方案](TEST_PLAN.zh-CN.md)在同平台、同查询、同指标下先记录现有路径的搜索和答案表现；若提出其他页面改动，再收集配对的前后数据。只有配对数据齐备时，`geo-compare` 才能计算跨平台增量、缺失数据上下界和退化阈值。目前 [全局比较](global-comparison.json)覆盖率为 0；没有证据证明 EAU 项目页曝光已经提升。
 
 下一轮的内容候选和答案级质量评测参考了 [GEO-Bench 与 AutoGEO 的适配方案](BENCHMARK_ADAPTATION.zh-CN.md)。两篇论文的生成阶段实验不直接解决当前项目页 0/4 的检索缺口，因此真实入口复测仍在前面。

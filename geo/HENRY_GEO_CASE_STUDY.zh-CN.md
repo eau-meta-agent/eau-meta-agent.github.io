@@ -6,7 +6,9 @@
 
 **实验探索树（2026-10-16）：** [静态树状图](figures/geo-exploration-overview.svg)可直接查看节点和连线；[交互树](figures/geo-exploration-tree.html)可展开真实返回的来源 URL、查询、干预方案、依赖图节点和跨平台评测；[说明](EXPLORATION_TREE.zh-CN.md)区分已观测入口与未评测效果。它与完整依赖图用途不同。
 
-**完整过程回放：** [过程图与逐步说明](OPTIMIZATION_PROCESS.zh-CN.md)展示历史 README 工作树实验、PR #6 合并、真实搜索复测，以及当前停在“论文入口待核实、跨平台效果未测”的位置。
+**完整过程回放：** [过程图与逐步说明](OPTIMIZATION_PROCESS.zh-CN.md)展示历史 README 工作树实验、PR #6 合并、真实搜索复测，以及当前停在“论文入口路径已确认、跨平台效果未测”的位置。
+
+**条件决策树：** [SVG](figures/geo-decision-tree.svg)按“项目页出现？→ 有可见入口？→ 链接状态？”给出有/无/未知分支，并高亮当前已有论文入口路径、应固定查询复测的分支；[说明](DECISION_TREE.zh-CN.md)保留判断依据与后续动作。
 
 ## 1. 依赖图：哪些节点可优化
 
@@ -29,7 +31,7 @@ flowchart LR
 | `robots.txt`、`sitemap.xml` | 已存在，既有测试显示 HTTP 200 | 维持并监测 |
 | GitHub README | 入口原先缺少项目首页链接和清晰研究摘要 | 在候选工作树中编辑 |
 | GitHub About | 原 description/homepage 均为空 | 已用仓库 admin 权限填入项目描述与首页 URL；仓库外部状态变更，不计入本地分数增量 |
-| arXiv → 项目页 | 论文能被搜索到，但论文页通向项目页的链接尚未证实 | 需要论文作者/提交者核实并操作；作为待测假设 |
+| arXiv → 项目页 | 论文能被搜索到；HTML 论文页已有可点击项目链接 | 摘要页经 HTML 页到项目页的路径已确认；搜索效果未测 |
 | 各平台检索/答案 | 图中为 ChatGPT、豆包、DeepSeek、Claude、Grok 各建检索和答案节点 | 结果必须实测，图的可达性不能代替召回 |
 
 已有 Codex web search 工具复测：Q1–Q4 两轮共 **项目网页 0/8，arXiv 论文 7/8**。这是 [既有测试方案](TEST_PLAN.zh-CN.md) 所载的工具结果，不等同 ChatGPT Search App，更不能推断其他平台。用户提供的一次豆包 Q1 最终答案没有提及 EAU，也没有项目 URL；缺少底层检索列表。
@@ -66,7 +68,7 @@ python3 "$WRAPPER" geo-explore --repo . --config geo/config.json \
 
 2026-10-16 再次对 Q1–Q4 各调用一次本会话网页搜索工具，原始响应分别保存为 [Q1](evidence/gpt-web-q1-20261016.txt)、[Q2](evidence/gpt-web-q2-20261016.txt)、[Q3](evidence/gpt-web-q3-20261016.txt)、[Q4](evidence/gpt-web-q4-20261016.txt)。[提取出的 URL](gpt-web-search-observations.json)显示：**项目域名 0/4、EAU arXiv 论文 4/4、EAU GitHub 仓库 0/4**。统计的是工具响应中显示的来源 URL，并无稳定的前十名次，也没有任何其他 App 的结果。
 
-新版 [`geo-prioritize`](priorities.json)不再把图上“可达”的 11 个虚拟结果节点当作证据，也不使用手填的缺口标记和成本评分。它只数“某个入口 URL 出现在真实返回中，同时项目 URL 没出现”的查询次数。论文页对应 **4 个可测试入口机会**，因此排在下一次**验证链接和设计实验**的首位；仓库、首页等来源在这四次返回中没有出现，无法凭本观测给它们排效果次序。所有改动的 `effect_status` 仍是 `unmeasured`。这个次序表示值得先测试哪里，**不是**论文链接会让项目页曝光提升 4 次。
+新版 [`geo-prioritize`](priorities.json)不再把图上“可达”的 11 个虚拟结果节点当作证据，也不使用手填的缺口标记和成本评分。它只数“某个入口 URL 出现在真实返回中，同时项目 URL 没出现”的查询次数。论文页对应 **4 个可测试入口机会**，因此排在下一次**固定查询复测现有路径**的首位；仓库、首页等来源在这四次返回中没有出现，无法凭本观测给它们排效果次序。所有改动的 `effect_status` 仍是 `unmeasured`。这个次序表示值得先测试哪里，**不是**论文链接会让项目页曝光提升 4 次。
 
 复现：
 
@@ -83,7 +85,7 @@ python3 /path/to/autoresearch-wrapper/scripts/autoresearch_wrapper.py geo-priori
 | 优先级 | 节点 | 基线结构优先分 | 状态 | 判断 |
 | ---: | --- | ---: | --- | --- |
 | 1 | README → 项目页 | 12 | 已生成候选、待上线及真实复测 | 成本低、外部入口明确；目前仅本地代理分数提升 |
-| 2 | arXiv → 项目页 | 6 | 待核实链接及作者操作 | 论文 URL 已被工具检索，可能成为项目页入口；效果未测 |
+| 2 | arXiv → 项目页 | 6 | HTML 论文页已有链接；搜索效果未测 | 论文 URL 已被工具检索，但不能据此推断搜索会沿链接发现项目页 |
 | — | GitHub About | 0，已处理 | description/homepage 已写入 | 后续观测与 README 变化会混杂，需记录时间 |
 | — | 首页身份、相关工作、抓取入口 | 0，当前无缺口 | 本轮维持 | 无需为了本地满分重复添加内容 |
 

@@ -44,7 +44,7 @@
       ],
       "source_url": "https://github.com/eau-meta-agent/eau-meta-agent.github.io",
       "cost": 1,
-      "current_gap": true,
+      "current_gap": false,
       "owner": "repo",
       "candidate_id": "readme-backlink",
       "change_kind": "edge",
@@ -71,11 +71,13 @@
       ],
       "source_url": "https://arxiv.org/abs/2610.16523",
       "cost": 2,
-      "current_gap": true,
+      "current_gap": false,
       "owner": "paper-author",
       "change_kind": "edge",
-      "local_state": "论文页链接状态未核实；待作者确认",
-      "hypothesis": "已返回的论文页若链接到项目页，可能增加项目页发现机会。"
+      "local_state": "arXiv HTML 论文页已有可点击的项目链接；摘要页到 HTML 页再到项目页共两跳；搜索影响未测",
+      "hypothesis": "已返回的论文入口存在到项目页的路径，但搜索系统是否沿路径发现项目页仍需实测。",
+      "link_state": "present",
+      "link_evidence_url": "https://arxiv.org/html/2610.16523v1"
     },
     {
       "id": "homepage_identity",

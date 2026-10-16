@@ -1,6 +1,6 @@
 # GEO experiment: EAU
 
-Explore the [visible tree diagram](figures/geo-exploration-overview.svg), [interactive experiment tree](figures/geo-exploration-tree.html), [full optimization process](OPTIMIZATION_PROCESS.zh-CN.md), and [machine-readable JSON](exploration-tree.json). The tree separates observed search entry points from untested interventions.
+Start with the [conditional decision tree](figures/geo-decision-tree.svg) and its [decision guide](DECISION_TREE.zh-CN.md): every branch is a yes/no/unknown question that selects the next test. The [evidence hierarchy](figures/geo-exploration-overview.svg), [interactive graph](figures/geo-exploration-tree.html), and [historical process](OPTIMIZATION_PROCESS.zh-CN.md) are separate views.
 
 The [GEO-Bench / AutoGEO adaptation](BENCHMARK_ADAPTATION.zh-CN.md) adds a staged retrieval-versus-answer evaluation plan and a [pre-registered query bank](benchmark-query-bank.json). New queries are unobserved until they are actually run.
 

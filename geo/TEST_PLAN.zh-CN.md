@@ -114,7 +114,7 @@ PR #6 已于 02:59:31 UTC 合并。约 03:00 UTC 用 Codex 网页搜索工具分
 
 ## 11. 只用 GPT 网页搜索返回的入口观测
 
-同日再次运行 Q1–Q4，保留了四份[原始工具响应](evidence/gpt-web-q1-20261016.txt)及[提取的全部来源 URL](gpt-web-search-observations.json)。项目 URL 0/4、论文 URL 4/4、EAU 仓库 URL 0/4。当前[下一实验次序](priorities.json)只依据真实返回中的来源 URL 与缺失的项目 URL；历史“图上可达 11 个结果”的[结构评分](legacy-structural-priorities.json)已停用。论文页到项目页的链接是值得先验证的入口假设，其提升效果仍未测得。当前范围仅为本会话 GPT/Codex 网页搜索工具，其他平台留待以后独立采样。
+同日再次运行 Q1–Q4，保留了四份[原始工具响应](evidence/gpt-web-q1-20261016.txt)及[提取的全部来源 URL](gpt-web-search-observations.json)。项目 URL 0/4、论文 URL 4/4、EAU 仓库 URL 0/4。当前[下一实验次序](priorities.json)只依据真实返回中的来源 URL 与缺失的项目 URL；历史“图上可达 11 个结果”的[结构评分](legacy-structural-priorities.json)已停用。已独立核查 [arXiv HTML 论文页](https://arxiv.org/html/2610.16523v1)有到项目页的可点击链接；摘要页经 HTML 页形成两跳路径。下一步应固定查询复测此现有路径的搜索表现，其提升效果仍未测得。当前范围仅为本会话 GPT/Codex 网页搜索工具，其他平台留待以后独立采样。
 
 ## 12. GEO-Bench / AutoGEO 启发的下一版评测
 
