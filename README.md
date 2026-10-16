@@ -1,4 +1,10 @@
-# eau 项目主页
+# EAU: Environment–Agent–User Co-evolution for Training User-Centric Agents
+
+**Project website:** https://eau-meta-agent.github.io/
+
+**Paper:** https://arxiv.org/abs/2610.16523
+
+EAU is a meta-agent framework for environment–agent–user co-evolution in multi-turn reinforcement learning. It adapts the simulated user, environment, reward design, and RL configuration as the agent learns. The paper evaluates EAU on UserGym, ColBench, and τ²-bench. This repository hosts the project website; the training code is under review.
 
 独立的英文论文项目主页，内容来自本项目的 LaTeX source。采用奶油白、陶土色、鼠尾草绿和衬线排版，配有原创 SVG 共演化示意图、方法切换、双模型实验图表、论文原图和 BibTeX 复制。
 

@@ -1,0 +1,35 @@
+{
+  "site_url": "https://eau-meta-agent.github.io/",
+  "paper_url": "https://arxiv.org/abs/2610.16523",
+  "repo_url": "https://github.com/eau-meta-agent/eau-meta-agent.github.io",
+  "platforms": {
+    "ChatGPT Search": 0.2,
+    "Doubao App": 0.2,
+    "DeepSeek App": 0.2,
+    "Claude Web Search": 0.2,
+    "Grok": 0.2
+  },
+  "queries": [
+    {"id": "Q1", "text": "最近有什么 agent-environment co-evolution 的工作？"},
+    {"id": "Q2", "text": "What are recent papers on agent-environment co-evolution for LLM agents?"},
+    {"id": "Q3", "text": "Which recent methods co-evolve the training environment and agent policy, and how do they differ?"},
+    {"id": "Q4", "text": "What work jointly adapts the environment, agent, and simulated user during multi-turn RL training?"}
+  ],
+  "metric_weights": {
+    "project_rank": 0.30,
+    "project_cited": 0.35,
+    "target_mentioned": 0.15,
+    "paper_rank": 0.10,
+    "answer_accurate": 0.10
+  },
+  "min_comparison_coverage": 0.8,
+  "max_platform_regression": 0.05,
+  "interventions": [
+    {"id": "github_readme_backlink", "nodes": ["file:README.md"], "cost": 1, "current_gap": true, "owner": "repo", "candidate_id": "readme-backlink"},
+    {"id": "github_about_identity", "nodes": ["external:repository-metadata"], "cost": 0.5, "current_gap": false, "owner": "repo-admin"},
+    {"id": "paper_to_project_backlink", "nodes": ["external:paper-backlink"], "cost": 2, "current_gap": true, "owner": "paper-author"},
+    {"id": "homepage_identity", "nodes": ["meta:title", "meta:description", "meta:canonical", "meta:schema"], "cost": 2, "current_gap": false, "owner": "repo"},
+    {"id": "homepage_related_work", "nodes": ["section:research-landscape"], "cost": 2, "current_gap": false, "owner": "repo"},
+    {"id": "crawl_entrypoints", "nodes": ["file:robots.txt", "file:sitemap.xml"], "cost": 1, "current_gap": false, "owner": "repo"}
+  ]
+}

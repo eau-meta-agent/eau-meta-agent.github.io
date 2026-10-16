@@ -19,4 +19,6 @@ Record repeated searches in `observations.csv` (one row per provider, phase, exa
 
 The full cross-agent protocol and current results are in [TEST_PLAN.zh-CN.md](TEST_PLAN.zh-CN.md).
 
+The Henry autoresearch-wrapper dependency graph, node-edit loop, global priority analysis, and new observation template are documented in [HENRY_GEO_CASE_STUDY.zh-CN.md](HENRY_GEO_CASE_STUDY.zh-CN.md).
+
 Do not compare a deployed baseline with an unpublished candidate as if both had a live search result. Re-run the same query set after deployment and allow for indexing delay. The current sample size is too small to infer a stable exposure rate.
