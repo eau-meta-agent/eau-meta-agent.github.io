@@ -1,6 +1,8 @@
 # EAU GEO 实验探索树
 
-打开 [交互树](figures/geo-exploration-tree.html)，点击分支逐层展开。机器可读版本为 [exploration-tree.json](exploration-tree.json)。它由 Henry wrapper 的 `geo-explore` 命令生成。
+如果想先看从选节点到复测的整条路径，请看[优化过程图与逐步说明](OPTIMIZATION_PROCESS.zh-CN.md)。
+
+先看可直接显示的[树状图 SVG](figures/geo-exploration-overview.svg)，再打开 [交互树状图](figures/geo-exploration-tree.html)，点击有连线的卡片逐层展开；下方保留每条分支的证据详情。机器可读版本为 [exploration-tree.json](exploration-tree.json)。交互版由 Henry wrapper 的 `geo-explore` 命令生成；静态版可用 `python3 tools/build_geo_tree_svg.py` 重建。
 
 ```text
 目标项目页

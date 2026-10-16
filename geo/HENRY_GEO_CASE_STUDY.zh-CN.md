@@ -4,7 +4,9 @@
 
 **合并后更新（2026-10-16）：** EAU PR #6 已合并。即时 [Codex 网页搜索复测](evidence/codex-web-postmerge-20261016.md)在 Q1–Q4 显示项目 URL 0/4、arXiv URL 4/4，项目页曝光提升仍未证实。[交互式完整依赖图](figures/full-dependency-graph.html)显示全部 39 节点、47 条边；[查看说明](GRAPH_VIEWER.zh-CN.md)解释改动前后 JSON 的差异。此前的[简化图](figures/eau-dependency-graph-20261016.png)只显示关键路径。
 
-**实验探索树（2026-10-16）：** [交互树](figures/geo-exploration-tree.html)把真实返回的来源 URL、查询、干预方案和依赖图节点逐层连接；[说明](EXPLORATION_TREE.zh-CN.md)区分已观测入口与未评测效果。它与完整依赖图用途不同。
+**实验探索树（2026-10-16）：** [静态树状图](figures/geo-exploration-overview.svg)可直接查看节点和连线；[交互树](figures/geo-exploration-tree.html)可展开真实返回的来源 URL、查询、干预方案、依赖图节点和跨平台评测；[说明](EXPLORATION_TREE.zh-CN.md)区分已观测入口与未评测效果。它与完整依赖图用途不同。
+
+**完整过程回放：** [过程图与逐步说明](OPTIMIZATION_PROCESS.zh-CN.md)展示历史 README 工作树实验、PR #6 合并、真实搜索复测，以及当前停在“论文入口待核实、跨平台效果未测”的位置。
 
 ## 1. 依赖图：哪些节点可优化
 
