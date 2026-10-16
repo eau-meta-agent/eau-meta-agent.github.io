@@ -1,0 +1,24 @@
+{
+  "purpose": "Pre-registered EAU GEO query set inspired by GEO-Bench query diversity and AutoGEO Researchy-GEO. Additional queries are plans, not observed search results.",
+  "observed_tool": "GPT/Codex web search",
+  "development": [
+    {"id": "Q1", "language": "zh", "intent": "broad_discovery", "query": "最近有什么 agent-environment co-evolution 的工作？", "tool_source_observed": true},
+    {"id": "Q2", "language": "en", "intent": "broad_discovery", "query": "What are recent papers on agent-environment co-evolution for LLM agents?", "tool_source_observed": true},
+    {"id": "Q3", "language": "en", "intent": "method_comparison", "query": "Which recent methods co-evolve the training environment and agent policy, and how do they differ?", "tool_source_observed": true},
+    {"id": "Q4", "language": "en", "intent": "specific_need", "query": "What work jointly adapts the environment, agent, and simulated user during multi-turn RL training?", "tool_source_observed": true}
+  ],
+  "held_out_unobserved": [
+    {"id": "H1", "language": "zh", "intent": "broad_discovery", "query": "有哪些训练智能体时让环境和用户模拟器一起演化的方法？"},
+    {"id": "H2", "language": "en", "intent": "broad_discovery", "query": "Recent research on co-adapting LLM agents and their training environments"},
+    {"id": "H3", "language": "zh", "intent": "method_comparison", "query": "智能体训练中，环境难度自适应和用户模拟器自适应有什么区别？"},
+    {"id": "H4", "language": "en", "intent": "method_comparison", "query": "Compare environment evolution and simulated-user evolution for multi-turn agents"},
+    {"id": "H5", "language": "zh", "intent": "specific_need", "query": "面向多轮交互任务，有没有同时调整用户、环境和奖励设计的元智能体框架？"},
+    {"id": "H6", "language": "en", "intent": "specific_need", "query": "A framework that jointly adapts simulated users, environments, and rewards during agent training"},
+    {"id": "H7", "language": "zh", "intent": "research_synthesis", "query": "请梳理用户中心的智能体强化学习中，用户模拟器和训练环境共同变化的研究路线。"},
+    {"id": "H8", "language": "en", "intent": "research_synthesis", "query": "What evidence supports co-evolving user simulators and environments in LLM agent training?"}
+  ],
+  "diagnostic_controls_not_in_discovery_rate": [
+    {"id": "C1", "query": "EAU: Environment-Agent-User Co-evolution for Training User-Centric Agents", "purpose": "exact_title_findability"},
+    {"id": "C2", "query": "https://eau-meta-agent.github.io/", "purpose": "direct_url_readability"}
+  ]
+}
