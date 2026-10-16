@@ -708,5 +708,7 @@
         }
       }
     }
-  ]
+  ],
+  "observation_phase": "pre_deploy_baseline",
+  "causal_note": "Search observations were collected once before candidate deployment; they are not per-candidate post-change measurements."
 }

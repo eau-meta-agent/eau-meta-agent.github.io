@@ -1,3 +1,5 @@
+> Phase: pre-deploy baseline. These observations were not collected after each local candidate round.
+
 | query | hop | codex-search | exa-search | gpt-codex-search | gpt-web-project-citation | tavily-search |
 | --- | --- | --- | --- | --- | --- | --- |
 | EAU Environment Agent User co-evolution | 0 | ✓1 | ✗ | - | ✗ | ✗ |
