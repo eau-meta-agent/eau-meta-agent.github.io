@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use EAU, please cite the paper below."
+title: "EAU: Environment-Agent-User Co-evolution for Training User-Centric Agents"
+type: article
+authors:
+  - family-names: Cai
+    given-names: Min
+  - family-names: Zhang
+    given-names: Dan
+  - family-names: Xing
+    given-names: Gao
+  - family-names: Ma
+    given-names: Libin
+  - family-names: Xu
+    given-names: Zhaohui
+  - family-names: Ye
+    given-names: Xi
+year: 2026
+identifiers:
+  - type: url
+    value: "https://arxiv.org/abs/2610.16523"
+    description: "arXiv:2610.16523"
+url: "https://eau-meta-agent.github.io/"
