@@ -2,7 +2,7 @@
 
 日期：2026-10-15。目标是提高 EAU **项目网页**在 agent 搜索中的自然发现和引用。论文 URL 与项目 URL 分开评估。本文使用 [HenryCai11/autoresearch-wrapper](https://github.com/HenryCai11/autoresearch-wrapper) 的 GEO 扩展；配置、操作清单、图和实验日志均在本目录。
 
-**合并后更新（2026-10-16）：** EAU PR #6 已合并。即时 [Codex 网页搜索复测](evidence/codex-web-postmerge-20261016.md)在 Q1–Q4 显示项目 URL 0/4、arXiv URL 4/4，项目页曝光提升仍未证实。[独立依赖图](figures/eau-dependency-graph-20261016.png)只显示关键路径；完整的 39 节点、47 条边以 [JSON](baseline-graph.json) 为准。
+**合并后更新（2026-10-16）：** EAU PR #6 已合并。即时 [Codex 网页搜索复测](evidence/codex-web-postmerge-20261016.md)在 Q1–Q4 显示项目 URL 0/4、arXiv URL 4/4，项目页曝光提升仍未证实。[交互式完整依赖图](figures/full-dependency-graph.html)显示全部 39 节点、47 条边；[查看说明](GRAPH_VIEWER.zh-CN.md)解释改动前后 JSON 的差异。此前的[简化图](figures/eau-dependency-graph-20261016.png)只显示关键路径。
 
 ## 1. 依赖图：哪些节点可优化
 
@@ -40,7 +40,7 @@ flowchart LR
 | candidate-001 | [操作清单](operations/readme-backlink.json)：给 README 增加项目页、论文链接和英文摘要 | 100/100 | 保留，已合并到本 PR 分支 |
 | candidate-002 | 在 001 之上再加中文摘要 | 100/100 | 分数持平，舍弃，减少维护负担 |
 
-原始 [Henry run 日志](henry-run-results.tsv) 保留候选提交和 keep/discard 判定；[候选图](candidate-graph.json)记录结构变化。10 个检查的 `geo_readiness` **只是本地可读性/入口代理指标**。它的 90→100 不表示搜索排名、曝光或引用提升，也不与历史 20 项网页评分混算。
+原始 [Henry run 日志](henry-run-results.tsv) 保留候选提交和 keep/discard 判定；[候选图](candidate-graph.json)与[基线图](baseline-graph.json)拓扑相同，只有 README 节点的内容指纹不同，见[差异清单](graph-diff.json)。10 个检查的 `geo_readiness` **只是本地可读性/入口代理指标**。它的 90→100 不表示搜索排名、曝光或引用提升，也不与历史 20 项网页评分混算。
 
 复现实验的主要命令（在 EAU 仓库执行；`WRAPPER` 指向 Henry 扩展仓库脚本）：
 

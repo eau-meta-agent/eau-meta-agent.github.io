@@ -23,4 +23,6 @@ The Henry autoresearch-wrapper dependency graph, node-edit loop, global priority
 
 The [standalone dependency graph](figures/eau-dependency-graph-20261016.png) visualizes the key paths from external entry points and site files to project discovery, platform retrieval, and answer citation. The [post-merge Codex search observation](evidence/codex-web-postmerge-20261016.md) records the first immediate Q1–Q4 check after PR #6 merged; it does not establish search lift.
 
+For all 39 nodes and 47 edges, open the [interactive full graph](figures/full-dependency-graph.html) or read the [Chinese viewing guide](GRAPH_VIEWER.zh-CN.md). The baseline and candidate graphs have the same topology; only the README content fingerprint changes.
+
 Do not compare a deployed baseline with an unpublished candidate as if both had a live search result. Re-run the same query set after deployment and allow for indexing delay. The current sample size is too small to infer a stable exposure rate.

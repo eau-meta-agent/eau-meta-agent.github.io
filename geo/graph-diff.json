@@ -1,0 +1,13 @@
+{
+  "added_nodes": [],
+  "removed_nodes": [],
+  "changed_nodes": [
+    {
+      "id": "file:README.md",
+      "before_content_sha256": "22f6565c72857a06491065ac8cb30562d65f27d54bed5ac01cd477d96ddda819",
+      "after_content_sha256": "46fcd31e50d8b93f5694ff8ccc56c404c2b6b1aaa0b8709935c7c51e6d2cd754"
+    }
+  ],
+  "added_edges": [],
+  "removed_edges": []
+}

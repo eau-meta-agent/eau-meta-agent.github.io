@@ -7,7 +7,8 @@
       "mutable": true,
       "operations": [
         "replace_text"
-      ]
+      ],
+      "content_sha256": "ffdd34fe64d9f9f32623df25a4158f88966f4c2cd103ad3cf6bc4366b46e7fb5"
     },
     {
       "id": "file:README.md",
@@ -16,7 +17,8 @@
       "mutable": true,
       "operations": [
         "replace_text"
-      ]
+      ],
+      "content_sha256": "46fcd31e50d8b93f5694ff8ccc56c404c2b6b1aaa0b8709935c7c51e6d2cd754"
     },
     {
       "id": "file:robots.txt",
@@ -25,7 +27,8 @@
       "mutable": true,
       "operations": [
         "replace_text"
-      ]
+      ],
+      "content_sha256": "c2412ef602abac3d5c519b18b4bb0b3c6d80d66c6307f3f30bcdbb4451ab9d30"
     },
     {
       "id": "file:sitemap.xml",
@@ -34,7 +37,8 @@
       "mutable": true,
       "operations": [
         "replace_text"
-      ]
+      ],
+      "content_sha256": "1f8aee0b20985b40fc2c49d6affe4169af2d5e6dd1bb0b3e18e4e736ac354087"
     },
     {
       "id": "file:styles.css",
@@ -43,7 +47,8 @@
       "mutable": true,
       "operations": [
         "replace_text"
-      ]
+      ],
+      "content_sha256": "22918ff64f0fa44f70e23ece6f935299a1b3e04a8f0c1330689f76fe747c9981"
     },
     {
       "id": "file:script.js",
@@ -52,7 +57,8 @@
       "mutable": true,
       "operations": [
         "replace_text"
-      ]
+      ],
+      "content_sha256": "a9a6bc3c30dbb6db8e0714b30aa12dd146f9a07710a1e1ceac2999117c94d751"
     },
     {
       "id": "file:site-config.js",
@@ -61,7 +67,8 @@
       "mutable": true,
       "operations": [
         "replace_text"
-      ]
+      ],
+      "content_sha256": "2069d8bd716a51deb171e2bb7f97270ce62356de50db6e14fd1342637e900073"
     },
     {
       "id": "section:framework",
@@ -77,7 +84,8 @@
       "span": [
         12853,
         16895
-      ]
+      ],
+      "content_sha256": "fa6a8410c53d29d483d9720a19084323068317eaa962ad757d146f177787758b"
     },
     {
       "id": "section:overview",
@@ -93,7 +101,8 @@
       "span": [
         11138,
         12847
-      ]
+      ],
+      "content_sha256": "4760366b75c5de49b6bf2dce90adfeccc8a45c87618af86d60c2efe0344a18d2"
     },
     {
       "id": "section:research-landscape",
@@ -109,7 +118,8 @@
       "span": [
         9206,
         11132
-      ]
+      ],
+      "content_sha256": "284a300017684074943e63fa21ffb2ebddf8cb4bad344a3de2bb36c495365da2"
     },
     {
       "id": "section:resources",
@@ -125,7 +135,8 @@
       "span": [
         21791,
         23307
-      ]
+      ],
+      "content_sha256": "539372c55898630b3f86117fe1d866bf7154d1de6e257d902d3299a36c4e818b"
     },
     {
       "id": "section:results",
@@ -141,7 +152,8 @@
       "span": [
         16901,
         19915
-      ]
+      ],
+      "content_sha256": "58b94e0634e5bda6d5fb4f48ba256440a9f962fec5cede6eb59595494cfae3f4"
     },
     {
       "id": "section:summary",
@@ -157,7 +169,8 @@
       "span": [
         8257,
         9200
-      ]
+      ],
+      "content_sha256": "640ba758e8aa0cd06d478ae96144277e8d4baa56129765f8eceedcbe263dff93"
     },
     {
       "id": "meta:title",
@@ -170,7 +183,8 @@
       "span": [
         1210,
         1298
-      ]
+      ],
+      "content_sha256": "b4a7412ea85a1dbd496965004a957df1cf2f0185d96eb0fe66759b35f70231e2"
     },
     {
       "id": "meta:description",
@@ -183,7 +197,8 @@
       "span": [
         184,
         443
-      ]
+      ],
+      "content_sha256": "b8940c7bf98ab19207397cf1c3e60be4332bfa2807accd519c9a0209a44ce293"
     },
     {
       "id": "meta:canonical",
@@ -196,7 +211,8 @@
       "span": [
         507,
         570
-      ]
+      ],
+      "content_sha256": "be7dae2e590c49228d481ec0ef2f6cca34822544c9085076606aa5061f7aba82"
     },
     {
       "id": "meta:schema",
@@ -209,21 +225,24 @@
       "span": [
         1301,
         2422
-      ]
+      ],
+      "content_sha256": "04257c0131bb6758aa8f2ff5e205f621941d92afe2c6252be84e4094f158173c"
     },
     {
       "id": "file:assets/eau_demo.webp",
       "kind": "asset",
       "path": "assets/eau_demo.webp",
       "mutable": true,
-      "operations": []
+      "operations": [],
+      "content_sha256": "9aba253e557b770cae8b4ff693419b3e52f277bffbba299a4902f596d69e0487"
     },
     {
       "id": "file:assets/experience_analysis.webp",
       "kind": "asset",
       "path": "assets/experience_analysis.webp",
       "mutable": true,
-      "operations": []
+      "operations": [],
+      "content_sha256": "b0d740cac7b1e8d860369009336e6330da5235fef374d94942ef4d2853cbdbaf"
     },
     {
       "id": "file:assets/favicon.svg",
@@ -232,14 +251,16 @@
       "mutable": true,
       "operations": [
         "replace_text"
-      ]
+      ],
+      "content_sha256": "fffca6bee7efdb7062a32814b68d5a57fd71fd39166d8d3c15916b84457b0a85"
     },
     {
       "id": "file:assets/usergym_progression.webp",
       "kind": "asset",
       "path": "assets/usergym_progression.webp",
       "mutable": true,
-      "operations": []
+      "operations": [],
+      "content_sha256": "240f1894b72e51b137a9e0022d9c3c5d23238498ffebab09db9124c2ec098c69"
     },
     {
       "id": "external:e8eea71086",
