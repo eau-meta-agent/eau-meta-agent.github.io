@@ -25,6 +25,7 @@
               "local_state": "论文页链接状态未核实；待作者确认",
               "change_kind": "edge",
               "hypothesis": "已返回的论文页若链接到项目页，可能增加项目页发现机会。",
+              "candidate_arms": [],
               "next_test_order": 1,
               "experiment": {
                 "status": "unmeasured"
@@ -69,6 +70,7 @@
               "local_state": "论文页链接状态未核实；待作者确认",
               "change_kind": "edge",
               "hypothesis": "已返回的论文页若链接到项目页，可能增加项目页发现机会。",
+              "candidate_arms": [],
               "next_test_order": 1,
               "experiment": {
                 "status": "unmeasured"
@@ -113,6 +115,7 @@
               "local_state": "论文页链接状态未核实；待作者确认",
               "change_kind": "edge",
               "hypothesis": "已返回的论文页若链接到项目页，可能增加项目页发现机会。",
+              "candidate_arms": [],
               "next_test_order": 1,
               "experiment": {
                 "status": "unmeasured"
@@ -157,6 +160,7 @@
               "local_state": "论文页链接状态未核实；待作者确认",
               "change_kind": "edge",
               "hypothesis": "已返回的论文页若链接到项目页，可能增加项目页发现机会。",
+              "candidate_arms": [],
               "next_test_order": 1,
               "experiment": {
                 "status": "unmeasured"
@@ -194,6 +198,7 @@
       "local_state": "抓取入口已存在；改动效果未测",
       "change_kind": "edge",
       "hypothesis": "调整 robots 和 sitemap 可能影响搜索抓取。",
+      "candidate_arms": [],
       "next_test_order": null,
       "experiment": {
         "status": "unmeasured"
@@ -234,6 +239,7 @@
       "local_state": "已设置；真实搜索效果未测",
       "change_kind": "node",
       "hypothesis": "仓库描述和首页地址可能增强项目身份识别。",
+      "candidate_arms": [],
       "next_test_order": null,
       "experiment": {
         "status": "unmeasured"
@@ -265,6 +271,7 @@
       "local_state": "已合并；真实搜索效果未测",
       "change_kind": "edge",
       "hypothesis": "GitHub README 链接可能帮助搜索系统把仓库关联到项目页。",
+      "candidate_arms": [],
       "next_test_order": null,
       "experiment": {
         "status": "unmeasured"
@@ -296,6 +303,7 @@
       "local_state": "页面已具备；改动效果未测",
       "change_kind": "node",
       "hypothesis": "改写页面身份元信息可能提高项目页检索。",
+      "candidate_arms": [],
       "next_test_order": null,
       "experiment": {
         "status": "unmeasured"
@@ -354,6 +362,28 @@
       "local_state": "页面已具备；改动效果未测",
       "change_kind": "node",
       "hypothesis": "调整相关工作分节可能提高主题查询匹配。",
+      "candidate_arms": [
+        {
+          "id": "sourced_research_summary",
+          "status": "planned",
+          "hypothesis": "给每个方法主张附可核对的论文原始来源，测试固定候选文档中的答案引用份额。"
+        },
+        {
+          "id": "verified_results_with_conditions",
+          "status": "planned",
+          "hypothesis": "只加入有论文出处的数值及评测条件，测试答案可引用性并核验事实保真。"
+        },
+        {
+          "id": "plain_language_comparison",
+          "status": "planned",
+          "hypothesis": "用清晰正文回答 EAU 与 SEAL/GenEnv 的差异，测试方法比较问题上的可见度。"
+        },
+        {
+          "id": "keyword_repetition_control",
+          "status": "control_only",
+          "hypothesis": "用重复术语作负对照，检查本地评分器是否误奖关键词堆砌；不作为上线候选。"
+        }
+      ],
       "next_test_order": null,
       "experiment": {
         "status": "unmeasured"
