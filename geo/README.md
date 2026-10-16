@@ -21,4 +21,6 @@ The full cross-agent protocol and current results are in [TEST_PLAN.zh-CN.md](TE
 
 The Henry autoresearch-wrapper dependency graph, node-edit loop, global priority analysis, and new observation template are documented in [HENRY_GEO_CASE_STUDY.zh-CN.md](HENRY_GEO_CASE_STUDY.zh-CN.md).
 
+The [GPT Image overview](figures/eau-geo-experiment-20261016.png) visualizes the three stages. The [post-merge Codex search observation](evidence/codex-web-postmerge-20261016.md) records the first immediate Q1–Q4 check after PR #6 merged; it does not establish search lift.
+
 Do not compare a deployed baseline with an unpublished candidate as if both had a live search result. Re-run the same query set after deployment and allow for indexing delay. The current sample size is too small to infer a stable exposure rate.
