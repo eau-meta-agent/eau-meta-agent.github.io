@@ -1,5 +1,7 @@
 # GEO experiment: EAU
 
+Explore the evidence-linked [GEO experiment tree](figures/geo-exploration-tree.html), its [Chinese guide](EXPLORATION_TREE.zh-CN.md), and [machine-readable JSON](exploration-tree.json). The tree separates observed search entry points from untested interventions.
+
 The target question is: **“最近有什么 agent-environment co-evolution 的工作？”**
 The candidate-local proxy is run with `python3 tools/geo_score.py` from the repository root. It uses 20 binary checks worth 5 points each:
 

@@ -1,0 +1,598 @@
+{
+  "objective": "https://eau-meta-agent.github.io/",
+  "tool": "GPT/Codex web search",
+  "result_scope": "source URLs displayed in the tool response; not a top-10 rank",
+  "observed_funnel": {
+    "project_returned": 0,
+    "paper_returned": 4,
+    "repo_returned": 0
+  },
+  "queries": [
+    {
+      "id": "Q1",
+      "text": "最近有什么 agent-environment co-evolution 的工作？",
+      "raw_file": "geo/evidence/gpt-web-q1-20261016.txt",
+      "project_returned": false,
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2610.16523",
+          "interventions": [
+            {
+              "id": "paper_to_project_backlink",
+              "source_url": "https://arxiv.org/abs/2610.16523",
+              "owner": "paper-author",
+              "candidate_id": null,
+              "local_state": "论文页链接状态未核实；待作者确认",
+              "change_kind": "edge",
+              "hypothesis": "已返回的论文页若链接到项目页，可能增加项目页发现机会。",
+              "next_test_order": 1,
+              "experiment": {
+                "status": "unmeasured"
+              },
+              "platforms_to_check": [
+                "ChatGPT Search",
+                "Doubao App",
+                "DeepSeek App",
+                "Claude Web Search",
+                "Grok"
+              ],
+              "nodes": [
+                {
+                  "id": "external:paper-backlink",
+                  "present": true,
+                  "mutable_in_repo": false,
+                  "operations": [
+                    "author-edit"
+                  ],
+                  "path": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q2",
+      "text": "What are recent papers on agent-environment co-evolution for LLM agents?",
+      "raw_file": "geo/evidence/gpt-web-q2-20261016.txt",
+      "project_returned": false,
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2610.16523",
+          "interventions": [
+            {
+              "id": "paper_to_project_backlink",
+              "source_url": "https://arxiv.org/abs/2610.16523",
+              "owner": "paper-author",
+              "candidate_id": null,
+              "local_state": "论文页链接状态未核实；待作者确认",
+              "change_kind": "edge",
+              "hypothesis": "已返回的论文页若链接到项目页，可能增加项目页发现机会。",
+              "next_test_order": 1,
+              "experiment": {
+                "status": "unmeasured"
+              },
+              "platforms_to_check": [
+                "ChatGPT Search",
+                "Doubao App",
+                "DeepSeek App",
+                "Claude Web Search",
+                "Grok"
+              ],
+              "nodes": [
+                {
+                  "id": "external:paper-backlink",
+                  "present": true,
+                  "mutable_in_repo": false,
+                  "operations": [
+                    "author-edit"
+                  ],
+                  "path": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q3",
+      "text": "Which recent methods co-evolve the training environment and agent policy, and how do they differ?",
+      "raw_file": "geo/evidence/gpt-web-q3-20261016.txt",
+      "project_returned": false,
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2610.16523",
+          "interventions": [
+            {
+              "id": "paper_to_project_backlink",
+              "source_url": "https://arxiv.org/abs/2610.16523",
+              "owner": "paper-author",
+              "candidate_id": null,
+              "local_state": "论文页链接状态未核实；待作者确认",
+              "change_kind": "edge",
+              "hypothesis": "已返回的论文页若链接到项目页，可能增加项目页发现机会。",
+              "next_test_order": 1,
+              "experiment": {
+                "status": "unmeasured"
+              },
+              "platforms_to_check": [
+                "ChatGPT Search",
+                "Doubao App",
+                "DeepSeek App",
+                "Claude Web Search",
+                "Grok"
+              ],
+              "nodes": [
+                {
+                  "id": "external:paper-backlink",
+                  "present": true,
+                  "mutable_in_repo": false,
+                  "operations": [
+                    "author-edit"
+                  ],
+                  "path": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q4",
+      "text": "What work jointly adapts the environment, agent, and simulated user during multi-turn RL training?",
+      "raw_file": "geo/evidence/gpt-web-q4-20261016.txt",
+      "project_returned": false,
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2610.16523",
+          "interventions": [
+            {
+              "id": "paper_to_project_backlink",
+              "source_url": "https://arxiv.org/abs/2610.16523",
+              "owner": "paper-author",
+              "candidate_id": null,
+              "local_state": "论文页链接状态未核实；待作者确认",
+              "change_kind": "edge",
+              "hypothesis": "已返回的论文页若链接到项目页，可能增加项目页发现机会。",
+              "next_test_order": 1,
+              "experiment": {
+                "status": "unmeasured"
+              },
+              "platforms_to_check": [
+                "ChatGPT Search",
+                "Doubao App",
+                "DeepSeek App",
+                "Claude Web Search",
+                "Grok"
+              ],
+              "nodes": [
+                {
+                  "id": "external:paper-backlink",
+                  "present": true,
+                  "mutable_in_repo": false,
+                  "operations": [
+                    "author-edit"
+                  ],
+                  "path": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "unobserved_entry_points": [
+    {
+      "id": "crawl_entrypoints",
+      "source_url": "https://eau-meta-agent.github.io/",
+      "owner": "repo",
+      "candidate_id": null,
+      "local_state": "抓取入口已存在；改动效果未测",
+      "change_kind": "edge",
+      "hypothesis": "调整 robots 和 sitemap 可能影响搜索抓取。",
+      "next_test_order": null,
+      "experiment": {
+        "status": "unmeasured"
+      },
+      "platforms_to_check": [
+        "ChatGPT Search",
+        "Doubao App",
+        "DeepSeek App",
+        "Claude Web Search",
+        "Grok"
+      ],
+      "nodes": [
+        {
+          "id": "file:robots.txt",
+          "present": true,
+          "mutable_in_repo": true,
+          "operations": [
+            "replace_text"
+          ],
+          "path": "robots.txt"
+        },
+        {
+          "id": "file:sitemap.xml",
+          "present": true,
+          "mutable_in_repo": true,
+          "operations": [
+            "replace_text"
+          ],
+          "path": "sitemap.xml"
+        }
+      ]
+    },
+    {
+      "id": "github_about_identity",
+      "source_url": "https://github.com/eau-meta-agent/eau-meta-agent.github.io",
+      "owner": "repo-admin",
+      "candidate_id": null,
+      "local_state": "已设置；真实搜索效果未测",
+      "change_kind": "node",
+      "hypothesis": "仓库描述和首页地址可能增强项目身份识别。",
+      "next_test_order": null,
+      "experiment": {
+        "status": "unmeasured"
+      },
+      "platforms_to_check": [
+        "ChatGPT Search",
+        "Doubao App",
+        "DeepSeek App",
+        "Claude Web Search",
+        "Grok"
+      ],
+      "nodes": [
+        {
+          "id": "external:repository-metadata",
+          "present": true,
+          "mutable_in_repo": false,
+          "operations": [
+            "manual-admin-edit"
+          ],
+          "path": null
+        }
+      ]
+    },
+    {
+      "id": "github_readme_backlink",
+      "source_url": "https://github.com/eau-meta-agent/eau-meta-agent.github.io",
+      "owner": "repo",
+      "candidate_id": "readme-backlink",
+      "local_state": "已合并；真实搜索效果未测",
+      "change_kind": "edge",
+      "hypothesis": "GitHub README 链接可能帮助搜索系统把仓库关联到项目页。",
+      "next_test_order": null,
+      "experiment": {
+        "status": "unmeasured"
+      },
+      "platforms_to_check": [
+        "ChatGPT Search",
+        "Doubao App",
+        "DeepSeek App",
+        "Claude Web Search",
+        "Grok"
+      ],
+      "nodes": [
+        {
+          "id": "file:README.md",
+          "present": true,
+          "mutable_in_repo": true,
+          "operations": [
+            "replace_text"
+          ],
+          "path": "README.md"
+        }
+      ]
+    },
+    {
+      "id": "homepage_identity",
+      "source_url": "https://eau-meta-agent.github.io/",
+      "owner": "repo",
+      "candidate_id": null,
+      "local_state": "页面已具备；改动效果未测",
+      "change_kind": "node",
+      "hypothesis": "改写页面身份元信息可能提高项目页检索。",
+      "next_test_order": null,
+      "experiment": {
+        "status": "unmeasured"
+      },
+      "platforms_to_check": [
+        "ChatGPT Search",
+        "Doubao App",
+        "DeepSeek App",
+        "Claude Web Search",
+        "Grok"
+      ],
+      "nodes": [
+        {
+          "id": "meta:title",
+          "present": true,
+          "mutable_in_repo": true,
+          "operations": [
+            "replace_text"
+          ],
+          "path": "index.html"
+        },
+        {
+          "id": "meta:description",
+          "present": true,
+          "mutable_in_repo": true,
+          "operations": [
+            "replace_text"
+          ],
+          "path": "index.html"
+        },
+        {
+          "id": "meta:canonical",
+          "present": true,
+          "mutable_in_repo": true,
+          "operations": [
+            "replace_text"
+          ],
+          "path": "index.html"
+        },
+        {
+          "id": "meta:schema",
+          "present": true,
+          "mutable_in_repo": true,
+          "operations": [
+            "replace_text"
+          ],
+          "path": "index.html"
+        }
+      ]
+    },
+    {
+      "id": "homepage_related_work",
+      "source_url": "https://eau-meta-agent.github.io/",
+      "owner": "repo",
+      "candidate_id": null,
+      "local_state": "页面已具备；改动效果未测",
+      "change_kind": "node",
+      "hypothesis": "调整相关工作分节可能提高主题查询匹配。",
+      "next_test_order": null,
+      "experiment": {
+        "status": "unmeasured"
+      },
+      "platforms_to_check": [
+        "ChatGPT Search",
+        "Doubao App",
+        "DeepSeek App",
+        "Claude Web Search",
+        "Grok"
+      ],
+      "nodes": [
+        {
+          "id": "section:research-landscape",
+          "present": true,
+          "mutable_in_repo": true,
+          "operations": [
+            "add_after",
+            "edit",
+            "move_after",
+            "remove"
+          ],
+          "path": "index.html"
+        }
+      ]
+    }
+  ],
+  "graph_node_count": 39,
+  "mapped_node_count": 10,
+  "unmapped_nodes": [
+    {
+      "id": "file:index.html",
+      "kind": "file",
+      "mutable_in_repo": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "file:styles.css",
+      "kind": "file",
+      "mutable_in_repo": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "file:script.js",
+      "kind": "file",
+      "mutable_in_repo": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "file:site-config.js",
+      "kind": "file",
+      "mutable_in_repo": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "section:framework",
+      "kind": "html-section",
+      "mutable_in_repo": true,
+      "operations": [
+        "add_after",
+        "edit",
+        "move_after",
+        "remove"
+      ]
+    },
+    {
+      "id": "section:overview",
+      "kind": "html-section",
+      "mutable_in_repo": true,
+      "operations": [
+        "add_after",
+        "edit",
+        "move_after",
+        "remove"
+      ]
+    },
+    {
+      "id": "section:resources",
+      "kind": "html-section",
+      "mutable_in_repo": true,
+      "operations": [
+        "add_after",
+        "edit",
+        "move_after",
+        "remove"
+      ]
+    },
+    {
+      "id": "section:results",
+      "kind": "html-section",
+      "mutable_in_repo": true,
+      "operations": [
+        "add_after",
+        "edit",
+        "move_after",
+        "remove"
+      ]
+    },
+    {
+      "id": "section:summary",
+      "kind": "html-section",
+      "mutable_in_repo": true,
+      "operations": [
+        "add_after",
+        "edit",
+        "move_after",
+        "remove"
+      ]
+    },
+    {
+      "id": "file:assets/eau_demo.webp",
+      "kind": "asset",
+      "mutable_in_repo": true,
+      "operations": []
+    },
+    {
+      "id": "file:assets/experience_analysis.webp",
+      "kind": "asset",
+      "mutable_in_repo": true,
+      "operations": []
+    },
+    {
+      "id": "file:assets/favicon.svg",
+      "kind": "asset",
+      "mutable_in_repo": true,
+      "operations": [
+        "replace_text"
+      ]
+    },
+    {
+      "id": "file:assets/usergym_progression.webp",
+      "kind": "asset",
+      "mutable_in_repo": true,
+      "operations": []
+    },
+    {
+      "id": "external:e8eea71086",
+      "kind": "external-source",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "external:c03d8d1bbe",
+      "kind": "external-source",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "external:cb9fc7c1c7",
+      "kind": "external-source",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "external:paper",
+      "kind": "external-source",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "external:d41310e492",
+      "kind": "external-source",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "outcome:site-discovery",
+      "kind": "unobserved-outcome",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "outcome:ChatGPT Search:retrieval",
+      "kind": "observed-outcome",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "outcome:ChatGPT Search:answer",
+      "kind": "observed-outcome",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "outcome:Doubao App:retrieval",
+      "kind": "observed-outcome",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "outcome:Doubao App:answer",
+      "kind": "observed-outcome",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "outcome:DeepSeek App:retrieval",
+      "kind": "observed-outcome",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "outcome:DeepSeek App:answer",
+      "kind": "observed-outcome",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "outcome:Claude Web Search:retrieval",
+      "kind": "observed-outcome",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "outcome:Claude Web Search:answer",
+      "kind": "observed-outcome",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "outcome:Grok:retrieval",
+      "kind": "observed-outcome",
+      "mutable_in_repo": false,
+      "operations": []
+    },
+    {
+      "id": "outcome:Grok:answer",
+      "kind": "observed-outcome",
+      "mutable_in_repo": false,
+      "operations": []
+    }
+  ],
+  "warning": "Branches show actual returned URLs and proposed interventions. They are not causal paths or predicted lift. Unknown platform effects remain unknown."
+}

@@ -4,6 +4,8 @@
 
 **合并后更新（2026-10-16）：** EAU PR #6 已合并。即时 [Codex 网页搜索复测](evidence/codex-web-postmerge-20261016.md)在 Q1–Q4 显示项目 URL 0/4、arXiv URL 4/4，项目页曝光提升仍未证实。[交互式完整依赖图](figures/full-dependency-graph.html)显示全部 39 节点、47 条边；[查看说明](GRAPH_VIEWER.zh-CN.md)解释改动前后 JSON 的差异。此前的[简化图](figures/eau-dependency-graph-20261016.png)只显示关键路径。
 
+**实验探索树（2026-10-16）：** [交互树](figures/geo-exploration-tree.html)把真实返回的来源 URL、查询、干预方案和依赖图节点逐层连接；[说明](EXPLORATION_TREE.zh-CN.md)区分已观测入口与未评测效果。它与完整依赖图用途不同。
+
 ## 1. 依赖图：哪些节点可优化
 
 `geo-graph` 对当前仓库建立了 **39 节点、47 条边**的基线图：[JSON](baseline-graph.json)。边表示信息流或可能的发现路径，**不是已证明的排名因果关系**。
@@ -49,7 +51,11 @@ python3 "$WRAPPER" geo-graph --repo . --config geo/config.json
 python3 "$WRAPPER" geo-score --repo . --config geo/config.json
 python3 "$WRAPPER" geo-apply --repo . --config geo/config.json --operations geo/operations/readme-backlink.json
 python3 "$WRAPPER" geo-compare --config geo/config.json --observations geo/pending_agent_observations.csv --candidate readme-backlink
-python3 "$WRAPPER" geo-prioritize --repo . --config geo/config.json --observations geo/pending_agent_observations.csv
+python3 "$WRAPPER" geo-prioritize --repo . --config geo/config.json --search-evidence geo/gpt-web-search-observations.json
+python3 "$WRAPPER" geo-explore --repo . --config geo/config.json \
+  --search-evidence geo/gpt-web-search-observations.json \
+  --observations geo/pending_agent_observations.csv \
+  --html-out geo/figures/geo-exploration-tree.html > geo/exploration-tree.json
 ```
 
 具体 wrapper 命令、评分和 CSV 语义见其 `GEO.md`。操作需在 wrapper 分配的候选 Git worktree 中执行 `--apply`；此处列出的 `geo-apply` 不带该参数，只预览变更。
