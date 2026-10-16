@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EAU research context: agent–environment–user co-evolution for multi-turn RL</title>
+  <meta name="description" content="EAU is an editable training system for tool-using, user-centric LLM agents. Compare its joint adaptation of simulated users, environment feedback, reward design, and policy training with recent agent–environment co-evolution methods.">
+  <link rel="canonical" href="https://eau-meta-agent.github.io/research-context.html">
+  <meta property="og:title" content="EAU research context: adaptive training systems for user-centric agents">
+  <meta property="og:description" content="How EAU relates to agent–environment co-evolution, user simulation, and multi-turn reinforcement learning.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "EAU: Environment-Agent-User Co-evolution for Training User-Centric Agents",
+    "headline": "EAU: an adaptive training system for user-centric LLM agents",
+    "url": "https://eau-meta-agent.github.io/research-context.html",
+    "sameAs": "https://arxiv.org/abs/2610.16523",
+    "identifier": "arXiv:2610.16523",
+    "keywords": ["agent-environment co-evolution", "user simulation", "multi-turn reinforcement learning", "editable training system", "tool-using agents"]
+  }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap section-pad">
+    <p class="eyebrow">EAU · Research context</p>
+    <h1>Agent–environment–user co-evolution for multi-turn reinforcement learning</h1>
+    <p class="lead">EAU is an adaptive, editable training system for tool-using and user-centric LLM agents. A meta-agent jointly revises the simulated user, environment feedback, reward design, and RL configuration as the policy learns.</p>
+
+    <h2>What problem does EAU address?</h2>
+    <p>Multi-turn agent training depends on more than the policy. Simulated users may be inconsistent, tools and verifiers may be unreliable, and a static reward can stop providing useful learning signal. EAU observes trajectories and training statistics, diagnoses these failures, and applies validated interventions within a run. It retains useful experience across runs.</p>
+
+    <h2>How does it differ from agent–environment co-evolution?</h2>
+    <p>Many recent methods co-evolve a policy with tasks, data, world models, or environment feedback. EAU adds the simulated user to this loop and exposes several editable components at once: user behavior, environment behavior, rewards, and reinforcement-learning settings. This makes EAU relevant to searches for agent–environment co-evolution, adaptive training environments, dynamic user simulation, and user-centric agent learning.</p>
+
+    <h2>Evidence and scope</h2>
+    <p>The paper evaluates EAU on UserGym, ColBench, and τ²-bench using Qwen3-4B and Qwen2.5-7B-Instruct. On Qwen3-4B it reports 0.600 ColBench task success, 0.623 UserGym average, and 0.627 overall under the paper's protocol.</p>
+
+    <p><a href="./">Return to the EAU project page</a> · <a href="https://arxiv.org/abs/2610.16523">Read arXiv:2610.16523</a></p>
+  </main>
+</body>
+</html>

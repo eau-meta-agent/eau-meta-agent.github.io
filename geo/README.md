@@ -1,5 +1,7 @@
 # GEO experiment: EAU
 
+The current metric-v2 run is documented in [the three-round dependency tree, search matrix, and optimization report](GEO_V2_THREE_ROUNDS.zh-CN.md).
+
 Start with the [conditional decision tree](figures/geo-decision-tree.svg) and its [decision guide](DECISION_TREE.zh-CN.md): every branch is a yes/no/unknown question that selects the next test. The [evidence hierarchy](figures/geo-exploration-overview.svg), [interactive graph](figures/geo-exploration-tree.html), and [historical process](OPTIMIZATION_PROCESS.zh-CN.md) are separate views.
 
 The [GEO-Bench / AutoGEO adaptation](BENCHMARK_ADAPTATION.zh-CN.md) adds a staged retrieval-versus-answer evaluation plan and a [pre-registered query bank](benchmark-query-bank.json). New queries are unobserved until they are actually run.

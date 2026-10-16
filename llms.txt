@@ -1,0 +1,25 @@
+# EAU — Environment-Agent-User Co-evolution
+
+EAU is a meta-agent framework for training user-centric LLM agents through environment-agent-user co-evolution during multi-turn reinforcement learning.
+
+Project: https://eau-meta-agent.github.io/
+Research context: https://eau-meta-agent.github.io/research-context.html
+Paper: https://arxiv.org/abs/2610.16523
+Authors: Min Cai, Dan Zhang, Gao Xing, Libin Ma, Zhaohui Xu, Xi Ye
+
+## What EAU changes
+
+- Simulated user: hybrid user simulator, symbolic rules, user persona, and LLM generation settings.
+- Environment: tool behavior, environment feedback, and state coverage.
+- Learning signal: reward design and verifiers.
+- Agent training: RL configuration and reinforcement-learning settings.
+
+The meta-agent observes trajectories, tool traces, rewards, and training statistics. It diagnoses failures, proposes targeted interventions, validates them, and hot-swaps supported changes within a run. Findings are retained across runs in an experience pool.
+
+## Evaluation
+
+EAU is evaluated on UserGym, ColBench, and τ²-bench with Qwen3-4B and Qwen2.5-7B-Instruct. On Qwen3-4B, EAU reports 0.600 ColBench task success and a 0.627 overall score. The ColBench task-success result is a 36.7% relative gain over InfoPO under the paper's evaluation protocol.
+
+## Related query territory
+
+EAU studies agent-environment-user co-evolution, adaptive training systems, editable training systems, multi-turn RL, user simulation, environment adaptation, and reward design for user-centric agents.

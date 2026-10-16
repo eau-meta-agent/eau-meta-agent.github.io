@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f2eb">
-  <meta name="description" content="EAU: Environment–Agent–User Co-evolution for Training User-Centric Agents (arXiv:2610.16523). A meta-agent adapts user simulation, environment rewards, and RL settings during training. Read the method and benchmark results.">
+  <meta name="description" content="EAU (arXiv:2610.16523) is a meta-agent framework for user-centric agents: an adaptive training system that jointly revises the simulated user, environment feedback, reward design, and RL configuration within and across multi-turn reinforcement-learning runs.">
   <meta name="robots" content="index,follow,max-snippet:-1">
   <link rel="canonical" href="https://eau-meta-agent.github.io/">
   <meta property="og:title" content="EAU: Environment–Agent–User Co-evolution for Training User-Centric Agents">
@@ -36,7 +36,8 @@
       {"@type": "Person", "name": "Zhaohui Xu"},
       {"@type": "Person", "name": "Xi Ye"}
     ],
-    "about": ["multi-turn reinforcement learning", "user simulator", "meta-agent", "environment-agent-user co-evolution"]
+    "keywords": ["adaptive training system", "editable training system", "multi-turn reinforcement learning", "user-centric LLM agents", "agent-environment-user co-evolution"],
+    "about": ["multi-turn reinforcement learning", "hybrid user simulator", "meta-agent framework", "environment feedback", "reward design", "RL configuration", "within a run", "across runs", "agent-environment-user co-evolution"]
   }
   </script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -60,7 +61,7 @@
         <p class="hero-kicker">Research paper · arXiv:2610.16523</p>
         <h1 id="hero-title">EAU: <em>Environment–Agent–User</em> Co-evolution for Training User-Centric Agents</h1>
         <p class="hero-subtitle">Learning to evolve, together.</p>
-        <p class="hero-description">Better agents begin with better interactions. <strong>eau</strong> evolves the environment, the agent, and the simulated user together—while training is still happening.</p>
+        <p class="hero-description"><strong>EAU is a meta-agent framework</strong> for training user-centric LLM agents. It evolves the environment, agent training, and simulated user together while multi-turn reinforcement learning is still running.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="#overview">Explore the research <span aria-hidden="true">↗</span></a>
           <a class="button button-dark" href="https://arxiv.org/abs/2610.16523" target="_blank" rel="noopener">arXiv <span aria-hidden="true">↗</span></a>
@@ -116,7 +117,7 @@
 
     <section class="research-summary wrap" id="summary" aria-labelledby="summary-title">
       <div><p class="eyebrow section-number">Research summary</p><h2 id="summary-title">What is EAU?</h2></div>
-      <div><p>EAU is a meta-agent framework for training user-centric LLM agents through environment–agent–user co-evolution. It monitors training trajectories, tool traces, rewards, and statistics; proposes targeted changes to the simulated user, environment, reward design, and RL configuration; and applies validated changes during an ongoing run. Experience from those interventions also carries across runs.</p><p>The paper evaluates EAU on UserGym, ColBench, and τ²-bench with two policy backbones. The results section below shows the reported scores and comparison methods. <a href="#research-landscape">Compare recent related work ↗</a> <a href="https://arxiv.org/abs/2610.16523">Read the paper and abstract ↗</a></p></div>
+      <div><p>EAU is an adaptive, editable training system for user-centric LLM agents through agent–environment–user co-evolution. Its meta-agent monitors training trajectories, tool traces, rewards, and statistics; proposes targeted changes to the hybrid user simulator, environment feedback, reward design, and RL configuration; and applies validated changes during an ongoing run. Experience from those interventions also carries across runs.</p><p>The paper evaluates EAU on UserGym, ColBench, and τ²-bench with two policy backbones. The results section below shows the reported scores and comparison methods. <a href="#research-landscape">Compare recent related work ↗</a> <a href="https://arxiv.org/abs/2610.16523">Read the paper and abstract ↗</a></p></div>
     </section>
 
     <section class="research-summary wrap" id="research-landscape" aria-labelledby="landscape-title">

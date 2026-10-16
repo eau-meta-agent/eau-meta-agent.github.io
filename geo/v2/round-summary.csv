@@ -1,0 +1,5 @@
+stage,query_tier,queries,gpt_web_project_url_found,eau_paper_or_entity_found,local_metric,matrix_offline,technical,next_decision
+baseline,none,0,,,68.63,53.83,90.83,add_llms_and_frontload_identity
+round_1,exact,5,0,5,84.80,74.67,100.00,expand_snippet_and_schema_for_fuzzy_queries
+round_2,fuzzy,5,0,5,92.50,87.50,100.00,add_broad_research_context_page
+round_3,broad,5,0,1,93.00,88.33,100.00,deploy_then_wait_for_recrawl_and_reprobe

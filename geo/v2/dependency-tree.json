@@ -1,0 +1,42 @@
+{
+  "objective": "EAU project-page discovery and citation",
+  "root": {
+    "id": "knowledge_map",
+    "children": [
+      {
+        "id": "query_frontier",
+        "children": [
+          {"id": "round_1_exact", "queries": 5},
+          {"id": "round_2_fuzzy", "queries": 5},
+          {"id": "round_3_broad", "queries": 5}
+        ]
+      },
+      {
+        "id": "search_probes",
+        "children": [
+          {"id": "gpt_web_search", "observed": true},
+          {"id": "codex_search", "observed": true, "project_found": 4, "queries": 15},
+          {"id": "tavily_search", "observed": true, "project_found": 0, "queries": 15},
+          {"id": "exa_search", "observed": true, "project_found": 3, "queries": 15}
+        ]
+      },
+      {
+        "id": "editable_nodes",
+        "children": [
+          {"id": "index_html", "affects": ["site", "snippet", "schema", "llm"]},
+          {"id": "llms_txt", "affects": ["llms"]},
+          {"id": "research_context_html", "affects": ["site", "snippet", "schema", "llm"]},
+          {"id": "robots_and_sitemap", "affects": ["technical", "future_search_discovery"]}
+        ]
+      },
+      {
+        "id": "evaluation",
+        "children": [
+          {"id": "offline_matrix", "columns": ["site", "snippet", "schema", "llms"]},
+          {"id": "llm_comprehension", "status": "not measured; no endpoint configured"},
+          {"id": "live_search", "status": "GPT web 0/15; Codex 4/15; Tavily 0/15; Exa 3/15 before deployment"}
+        ]
+      }
+    ]
+  }
+}

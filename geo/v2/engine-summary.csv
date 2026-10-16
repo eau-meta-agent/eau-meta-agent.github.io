@@ -1,0 +1,5 @@
+engine,found,probed,exact_found,fuzzy_found,broad_found,criterion
+gpt-web-project-citation,0,15,0,0,0,project domain present in returned sources
+codex-search,4,15,4,0,0,project domain cited in answer
+tavily-search,0,15,0,0,0,project domain cited in ranked results
+exa-search,3,15,2,0,1,project domain present in result text or URL

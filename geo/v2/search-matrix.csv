@@ -1,0 +1,16 @@
+round,tier,query,project_url_found,eau_paper_or_entity_found,observation
+1,exact,EAU Environment Agent User Co-evolution,0,1,EAU paper surfaced; project domain absent
+1,exact,EAU arXiv 2610.16523,0,1,EAU paper surfaced; project domain absent
+1,exact,EAU meta-agent user-centric agents,0,1,EAU paper surfaced; project domain absent
+1,exact,EAU UserGym ColBench,0,1,EAU paper surfaced; project domain absent
+1,exact,EAU project website environment agent user co-evolution,0,1,EAU paper surfaced; project domain absent
+2,fuzzy,framework jointly adapts simulated user environment rewards RL configuration,0,1,EAU paper surfaced; project domain absent
+2,fuzzy,user-centric agents co-evolve environment and user simulator,0,1,EAU paper surfaced; project domain absent
+2,fuzzy,meta-agent modifies training environment during multi-turn reinforcement learning,0,1,EAU paper surfaced; project domain absent
+2,fuzzy,adaptive user simulator reward design LLM agents,0,1,EAU paper surfaced; project domain absent
+2,fuzzy,within-run and across-run adaptation agent training,0,1,Third-party EAU paper summary surfaced; project domain absent
+3,broad,recent agent environment co-evolution papers,0,0,EAU absent from returned source pool
+3,broad,LLM agent training environment evolves with policy,0,0,EAU absent from returned source pool
+3,broad,multi-turn reinforcement learning user simulation benchmarks,0,0,EAU absent from returned source pool
+3,broad,editable training systems for tool-using agents,0,0,EAU absent from returned source pool
+3,broad,methods improving user-centric agents with simulated users,0,1,EAU paper surfaced; project domain absent
