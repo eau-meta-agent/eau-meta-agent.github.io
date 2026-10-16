@@ -17,6 +17,7 @@ EAU is a meta-agent framework for training user-centric LLM agents. It jointly a
 
 - Project: https://eau-meta-agent.github.io/
 - Paper: https://arxiv.org/abs/2610.16523
+- Bibliographic details: https://eau-meta-agent.github.io/paper.html
 - Authors: Min Cai, Dan Zhang, Gao Xing, Libin Ma, Zhaohui Xu, Xi Ye
 
 ## Evaluation
