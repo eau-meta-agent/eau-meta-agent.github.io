@@ -3,7 +3,7 @@
 **EAU is a meta-agent framework for training user-centric LLM agents by jointly adapting the user simulator, environment, reward design, and reinforcement-learning configuration.** It monitors multi-turn training, diagnoses uninformative or failing interactions, proposes targeted changes, validates them, and hot-swaps accepted changes into the running training system.
 
 - **Canonical project website:** https://eau-meta-agent.github.io/
-- **Paper:** [arXiv:2610.16523](https://arxiv.org/abs/2610.16523)
+- **Paper:** [alphaXiv — arXiv:2610.16523](https://www.alphaxiv.org/abs/2610.16523)
 - **Method overview:** https://eau-meta-agent.github.io/method.html
 - **Paper facts, authors, and results:** https://eau-meta-agent.github.io/paper.html
 - **Research context:** https://eau-meta-agent.github.io/research-context.html

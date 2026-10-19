@@ -16,7 +16,7 @@ EAU is a meta-agent framework for training user-centric LLM agents. It jointly a
 ## Canonical resources
 
 - Project: https://eau-meta-agent.github.io/
-- Paper: https://arxiv.org/abs/2610.16523
+- Paper (alphaXiv): https://www.alphaxiv.org/abs/2610.16523
 - Bibliographic details: https://eau-meta-agent.github.io/paper.html
 - Method summary: https://eau-meta-agent.github.io/method.html
 - Research context: https://eau-meta-agent.github.io/research-context.html
