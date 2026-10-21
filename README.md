@@ -4,6 +4,7 @@
 
 - **Canonical project website:** https://eau-meta-agent.github.io/
 - **Paper:** [alphaXiv — arXiv:2610.16523](https://www.alphaxiv.org/abs/2610.16523)
+- **Code:** https://github.com/StringNLPLAB/meta-agent
 - **Method overview:** https://eau-meta-agent.github.io/method.html
 - **Paper facts, authors, and results:** https://eau-meta-agent.github.io/paper.html
 - **Research context:** https://eau-meta-agent.github.io/research-context.html
