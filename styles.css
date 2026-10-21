@@ -47,4 +47,9 @@ tr.ours{background:#30271e}
 .evolution-art .user-node>circle{fill:#342e1d}
 .evolution-art .user-node>g{stroke:#e2ce94}
 .evolution-art>circle{fill:#080b08}
-@media(max-width:580px){.bar-plot{background:repeating-linear-gradient(to top,transparent 0,transparent 51.5px,#303830 51.5px,#303830 52.5px)}}
+@media(max-width:580px){
+  .site-header{height:auto;min-height:88px;padding-block:10px}
+  .site-header nav{flex:1;min-width:0;flex-wrap:wrap;justify-content:flex-end;gap:0 16px}
+  .site-header nav a{white-space:nowrap}
+  .bar-plot{background:repeating-linear-gradient(to top,transparent 0,transparent 51.5px,#303830 51.5px,#303830 52.5px)}
+}
